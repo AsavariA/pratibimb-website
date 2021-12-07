@@ -1,0 +1,51 @@
+.hero{
+    background-image: url(../assets/hero.JPG);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    filter: grayscale(100%);
+    animation: hue 5s infinite;
+}
+
+.main-text {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    h1 {
+        letter-spacing: 3px;
+        font-family: 'Playfair Display', serif;
+        font-size: 80px;
+        font-weight: lighter;
+        padding: 0 2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        padding: 0 2rem;
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 900px){
+
+        height: 50vh;
+
+        h1 {
+            font-size: 60px;
+            line-height: 60px;
+        }
+}
+}
+
+@keyframes hue {
+    0%, 100%  { -webkit-filter: hue-rotate(72deg); }
+    20% {-webkit-filter: hue-rotate(144deg);}
+    40% { -webkit-filter: hue-rotate(216deg); }
+    60% { -webkit-filter: hue-rotate(288deg); }
+    80% { -webkit-filter: hue-rotate(360deg); }
+  }
