@@ -3,10 +3,10 @@ import { Box, Link, IconButton, Drawer } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import useMediaQuery from "@mui/material/useMediaQuery";
-// import logo from '../assets/logo.png'
+import logo from "../assets/prati-white.png";
 
 const Navbar = () => {
-  const navchange = useMediaQuery("(min-width:1100px)");
+  const navchange = useMediaQuery("(min-width:1200px)");
 
   const Navlinks = ({ fd }) => {
     return (
@@ -63,7 +63,7 @@ const Navbar = () => {
     <div className="nav-wrapper">
       <Box display="flex" flexDirection="row" alignItems="center">
         <Link href="/" underline="none" color="inherit">
-          {/* <h1>P</h1> */}
+          <img src={logo} alt="logo" />
         </Link>
       </Box>
 

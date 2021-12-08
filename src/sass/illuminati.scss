@@ -1,0 +1,66 @@
+@import "./variables.scss";
+
+.illuminati-home {
+  background-image: url(../assets/illuminati4.jpg);
+  min-height: auto;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  filter: hue-rotate(40deg);
+  padding-bottom: 2rem;
+
+  @media only screen and (max-width: 900px) {
+    min-height: 70vh;
+    padding-bottom: 1.5rem;
+  }
+
+  .content {
+    text-align: center;
+    h2 {
+      letter-spacing: 3px;
+      font-family: "Playfair Display", serif;
+      font-size: 60px;
+      font-weight: lighter;
+      padding: 4rem 2rem 2rem 2rem;
+      color: $light-grey;
+    }
+
+    p {
+      padding: 0 2rem;
+      line-height: 2rem;
+      color: $light-grey;
+      font-weight: lighter;
+    }
+
+    @media only screen and (max-width: 900px) {
+      h2 {
+        font-size: 40px;
+        line-height: 40px;
+      }
+      p {
+        padding: 0rem;
+        line-height: 2rem;
+      }
+    }
+  }
+}
+
+.neon-ill {
+  margin: 0 2rem;
+}
+
+.illuminati-home-embed {
+  margin: 0 2rem;
+  padding: 2rem;
+  text-align: left;
+  border-radius: 20px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  @media only screen and (max-width: 900px) {
+    margin: 0 1.5rem;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+}

@@ -4,11 +4,12 @@
   display: flex;
   padding: 2rem 3rem;
   justify-content: space-between;
+  align-items: center;
   z-index: 1000;
   color: $light-grey;
 
   img {
-    height: 50px;
+    height: 80px;
     animation: none;
     filter: hue-rotate(0deg);
   }

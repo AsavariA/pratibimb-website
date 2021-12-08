@@ -24,6 +24,12 @@
   .aboutus-home .content h2 {
     font-size: 40px;
     line-height: 40px;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 0rem;
+  }
+  .aboutus-home .content p {
+    padding: 0rem;
   }
 }
 
@@ -86,9 +92,7 @@
   grid-template-rows: 1fr 1fr;
   -ms-grid-columns: (1fr) [5];
   grid-template-columns: repeat(5, 1fr);
-  grid-template-areas:
-    "big-top big-top big-top small-top small-top"
-    "small-middle small-middle big-middle big-middle big-middle";
+  grid-template-areas: "big-top big-top big-top small-top small-top" "small-middle small-middle big-middle big-middle big-middle";
 }
 
 .block {

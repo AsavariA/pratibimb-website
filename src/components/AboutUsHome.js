@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid } from "@mui/material";
+import NeonButton from "./NeonButton";
 
 const AboutUsHome = () => {
   return (
@@ -38,7 +39,7 @@ const AboutUsHome = () => {
         </Grid>
       </Grid>
       <div style={{ margin: "auto", marginTop: "3rem", width: "fit-content" }}>
-        <div className="custom-btn btn-15">Know more!</div>
+        <NeonButton>Know More!</NeonButton>
       </div>
     </div>
   );

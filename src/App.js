@@ -1,8 +1,11 @@
 import "./sass/index.css";
 import "./index.css";
+import { BrowserRouter as Router, useRoutes } from "react-router-dom";
 import Hero from "./components/Hero";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import AboutUsHome from "./components/AboutUsHome";
+import IlluminatiHome from "./components/IlluminatiHome";
+// import Spons from "./components/Sponsors";
 
 const theme = createTheme({
   palette: {
@@ -13,15 +16,33 @@ const theme = createTheme({
   },
 });
 
-function App() {
+const Home = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <div className="App">
-        <Hero />
-        <AboutUsHome />
-      </div>
-    </ThemeProvider>
+    <div className="App">
+      <Hero />
+      <AboutUsHome />
+      <IlluminatiHome />
+    </div>
   );
-}
+};
 
-export default App;
+const App = () => {
+  let routes = useRoutes([
+    { path: "/", element: <Home /> },
+    // { path: "sponsors", element: <Spons /> },
+    // ...
+  ]);
+  return routes;
+};
+
+const AppWrapper = () => {
+  return (
+    <Router>
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
+    </Router>
+  );
+};
+
+export default AppWrapper;
