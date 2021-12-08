@@ -1,16 +1,16 @@
-import './sass/index.css';
-import './index.css';
-import Hero from './components/Hero';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import AboutUsHome from './components/AboutUsHome';
+import "./sass/index.css";
+import "./index.css";
+import Hero from "./components/Hero";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import AboutUsHome from "./components/AboutUsHome";
 
 const theme = createTheme({
   palette: {
-    mode: 'dark',
+    mode: "dark",
   },
   typography: {
-    fontFamily: "'Readex Pro', sans-serif"
-  }
+    fontFamily: "'Readex Pro', sans-serif",
+  },
 });
 
 function App() {

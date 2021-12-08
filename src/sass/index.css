@@ -4,8 +4,8 @@
   display: flex;
   padding: 2rem 3rem;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   z-index: 1000;
   color: #e9e9e9;
 }
@@ -13,14 +13,14 @@
 .nav-wrapper img {
   height: 50px;
   -webkit-animation: none;
-          animation: none;
+  animation: none;
   -webkit-filter: hue-rotate(0deg);
-          filter: hue-rotate(0deg);
+  filter: hue-rotate(0deg);
 }
 
 .nav-wrapper h1 {
   letter-spacing: 3px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 40px;
   font-weight: lighter;
 }
@@ -50,8 +50,8 @@
   height: 70px;
   width: 70px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 @media (max-width: 600px) {
@@ -67,9 +67,9 @@
   background-size: cover;
   background-position: top;
   -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  filter: grayscale(100%);
   -webkit-animation: hue 5s infinite;
-          animation: hue 5s infinite;
+  animation: hue 5s infinite;
 }
 
 .main-text {
@@ -79,20 +79,20 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: white;
 }
 
 .main-text h1 {
   letter-spacing: 3px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 80px;
   font-weight: lighter;
   padding: 0 2rem;
@@ -118,7 +118,8 @@
 }
 
 @-webkit-keyframes hue {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-filter: hue-rotate(72deg);
   }
   20% {
@@ -136,7 +137,8 @@
 }
 
 @keyframes hue {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-filter: hue-rotate(72deg);
   }
   20% {
@@ -160,7 +162,7 @@
 
 .aboutus-home .content h2 {
   letter-spacing: 3px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 60px;
   font-weight: lighter;
   padding: 0 2rem;
@@ -196,10 +198,10 @@
 }
 
 .btn-15 {
-  color: #FFCAFF;
-  border: 1px solid #FFCAFF;
-  -webkit-box-shadow: 0 0 5px #FFCAFF, 0 0 5px #FFCAFF inset;
-          box-shadow: 0 0 5px #FFCAFF, 0 0 5px #FFCAFF inset;
+  color: #ffcaff;
+  border: 1px solid #ffcaff;
+  -webkit-box-shadow: 0 0 5px #ffcaff, 0 0 5px #ffcaff inset;
+  box-shadow: 0 0 5px #ffcaff, 0 0 5px #ffcaff inset;
   z-index: 1;
   text-align: center;
 }
@@ -212,9 +214,9 @@
   top: 0;
   right: 0;
   z-index: -1;
-  background: #FFCAFF;
-  -webkit-box-shadow: 0 0 20px #FFCAFF;
-          box-shadow: 0 0 20px #FFCAFF;
+  background: #ffcaff;
+  -webkit-box-shadow: 0 0 20px #ffcaff;
+  box-shadow: 0 0 20px #ffcaff;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -238,10 +240,12 @@
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-areas: "big-top big-top big-top small-top small-top" "small-middle small-middle big-middle big-middle big-middle";
+  grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: (1fr) [5];
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+    "big-top big-top big-top small-top small-top"
+    "small-middle small-middle big-middle big-middle big-middle";
 }
 
 .block {
@@ -258,7 +262,10 @@
   transition: opacity 0.2s ease-in;
 }
 
-#b1, #b2, #b3, #b4 {
+#b1,
+#b2,
+#b3,
+#b4 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -276,7 +283,10 @@
   background-image: url(../assets/grpdance1.jpg);
 }
 
-#b1:hover, #b2:hover, #b3:hover, #b4:hover {
+#b1:hover,
+#b2:hover,
+#b3:hover,
+#b4:hover {
   -webkit-filter: none !important;
   filter: none !important;
 }
