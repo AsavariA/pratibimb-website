@@ -1,12 +1,12 @@
 import "./sass/index.css";
 import "./index.css";
 import { BrowserRouter as Router, useRoutes } from "react-router-dom";
-import Hero from "./components/Hero";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import AboutUsHome from "./components/AboutUsHome";
 import IlluminatiHome from "./components/IlluminatiHome";
 import Footer from "./components/Footer";
-// import Spons from "./components/Sponsors";
+import Sponsors from "./components/Sponsors";
+import HeroCommon from "./components/HeroCommon";
 
 const theme = createTheme({
   palette: {
@@ -20,7 +20,11 @@ const theme = createTheme({
 const Home = () => {
   return (
     <div className="App">
-      <Hero />
+      <HeroCommon
+        title="PRATIBIMB VJTI"
+        subtitle="THE CULTURAL EXTRAVAGANZA OF VJTI, MUMBAI"
+        imgClass="hero-home"
+      />
       <AboutUsHome />
       <IlluminatiHome />
     </div>
@@ -30,7 +34,7 @@ const Home = () => {
 const App = () => {
   let routes = useRoutes([
     { path: "/", element: <Home /> },
-    // { path: "sponsors", element: <Spons /> },
+    { path: "/sponsors", element: <Sponsors /> },
     // ...
   ]);
   return routes;
