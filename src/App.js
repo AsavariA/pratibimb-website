@@ -1,27 +1,50 @@
-import './sass/index.css';
-import './index.css';
-import Hero from './components/Hero';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import AboutUsHome from './components/AboutUsHome';
+import "./sass/index.css";
+import "./index.css";
+import { BrowserRouter as Router, useRoutes } from "react-router-dom";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import HeroCommon from "./components/HeroCommon";
+import AboutUsHome from "./components/AboutUsHome";
+import Spons from "./components/Sponsors";
 
 const theme = createTheme({
   palette: {
-    mode: 'dark',
+    mode: "dark",
   },
   typography: {
-    fontFamily: "'Readex Pro', sans-serif"
-  }
+    fontFamily: "'Readex Pro', sans-serif",
+  },
 });
 
-function App() {
+const Home = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <div className="App">
-        <Hero />
-        <AboutUsHome />
-      </div>
-    </ThemeProvider>
+    <div className="App">
+      <HeroCommon
+        title="PRATIBIMB VJTI"
+        subtitle="THE CULTURAL EXTRAVAGANZA OF VJTI, MUMBAI"
+        imgClass="hero-home"
+      />
+      <AboutUsHome />
+    </div>
   );
-}
+};
 
-export default App;
+const App = () => {
+  let routes = useRoutes([
+    { path: "/", element: <Home /> },
+    { path: "/sponsors", element: <Spons /> },
+    // ...
+  ]);
+  return routes;
+};
+
+const AppWrapper = () => {
+  return (
+    <Router>
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
+    </Router>
+  );
+};
+
+export default AppWrapper;

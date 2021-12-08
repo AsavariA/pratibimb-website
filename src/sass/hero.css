@@ -1,13 +1,20 @@
 .hero {
-  background-image: url(../assets/hero.JPG);
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+}
+
+.hero-home {
+  background-image: url(../assets/hero.JPG);
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
   -webkit-animation: hue 5s infinite;
           animation: hue 5s infinite;
+}
+
+.hero-spons {
+  background-image: url(../assets/spons-hero.jpg);
 }
 
 .main-text {
@@ -30,7 +37,7 @@
 
 .main-text h1 {
   letter-spacing: 3px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 80px;
   font-weight: lighter;
   padding: 0 2rem;
@@ -56,7 +63,8 @@
 }
 
 @-webkit-keyframes hue {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-filter: hue-rotate(72deg);
   }
   20% {
@@ -74,7 +82,8 @@
 }
 
 @keyframes hue {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-filter: hue-rotate(72deg);
   }
   20% {
