@@ -1,0 +1,150 @@
+@import './variables.scss';
+
+.aboutus-home {
+    background-color: black;
+    padding: 5rem 3rem;
+
+    .content {
+    
+        h2 {
+            letter-spacing: 3px;
+            font-family: 'Playfair Display', serif;
+            font-size: 60px;
+            font-weight: lighter;
+            padding: 0 2rem;
+            margin-bottom: 1rem;
+            color: $light-grey;
+
+        }
+    
+        p {
+            padding: 0 2rem;
+            line-height: 2rem;
+            color: $light-grey;
+            font-weight: lighter;
+        }
+    
+        @media only screen and (max-width: 900px){
+    
+            h2 {
+                font-size: 40px;
+                line-height: 40px;
+            }
+    }
+    }
+}
+
+.custom-btn {
+    color: #fff;
+    width: auto;
+    padding: 0.5rem 3rem;
+    font-weight: bolder;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+  }
+
+.btn-15 {
+    color: $dark-purple;
+    border: 1px solid $dark-purple;
+    box-shadow: 0 0 5px $dark-purple, 0 0 5px $dark-purple inset;
+    z-index: 1;
+    text-align: center;
+  }
+  .btn-15:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: $dark-purple;
+    box-shadow:
+     0 0 20px  $dark-purple;
+    transition: all 0.3s ease;
+  }
+  .btn-15:hover {
+    color: #000;
+  }
+  .btn-15:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  .btn-15:active {
+    top: 2px;
+  }
+
+
+
+.header-grid {
+    width: 100% !important;
+    height: 60vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+    "big-top big-top big-top small-top small-top"
+    "small-middle small-middle big-middle big-middle big-middle";
+  }
+  
+  .block {
+    height: 100%;
+    width: 100%;
+    border: 10px solid black;
+    background: black;
+    transition: opacity 0.2s ease-out;
+    
+    &:hover {
+      transition: opacity 0.2s ease-in;
+    }
+  }
+
+  #b1, #b2, #b3, #b4 {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      transition: radial;
+  }
+  
+  #b1 {
+    grid-area: big-top;
+    background-image: url(../assets/grpdance1.jpg);
+  }
+
+  #b1:hover, #b2:hover, #b3:hover, #b4:hover {
+    -webkit-filter: none !important; 
+    filter: none !important;
+  }
+  
+  #b2 {
+    grid-area :small-top;
+    background-image: url(../assets/kota1.jpg);
+  }
+  
+  #b3 {
+    grid-area: small-middle;
+    background-image: url(../assets/solodance1.JPG);
+  }
+  
+  #b4 {
+    grid-area: big-middle;
+    background-image: url(../assets/duetdance1.JPG);
+  }
+  
+//   #b5 {
+    
+//   }
+  
+//   #b6 {
+    
+//   }
+  
+//   #b7 {
+    
+//   }
+  

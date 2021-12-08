@@ -1,11 +1,11 @@
+@import './variables.scss';
+
 .nav-wrapper {
     display: flex;
     padding: 2rem 3rem;
     justify-content: space-between;
-    position: sticky;
     z-index: 1000;
-    top: 0;
-    color: rgb(233, 233, 233);
+    color: $light-grey;
 
     img {
         height: 50px;
@@ -27,6 +27,7 @@
     p {
         margin: 0 1rem;
         cursor: pointer;
+        color: $light-grey;
     }
 
     p:hover {

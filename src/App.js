@@ -2,6 +2,7 @@ import './sass/index.css';
 import './index.css';
 import Hero from './components/Hero';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import AboutUsHome from './components/AboutUsHome';
 
 const theme = createTheme({
   palette: {
@@ -17,6 +18,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <div className="App">
         <Hero />
+        <AboutUsHome />
       </div>
     </ThemeProvider>
   );
