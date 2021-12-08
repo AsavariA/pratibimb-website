@@ -408,7 +408,7 @@
 
 .footer {
   padding: 4rem 3rem;
-  background-color: black;
+  background-color: #111111;
 }
 
 .footer-prati h3 {
@@ -440,17 +440,17 @@ p {
 .social-link {
   width: 40px !important;
   height: 40px !important;
-  background-color: #260135;
+  background-color: #480363;
   border-radius: 50%;
   padding: 0.7rem;
 }
 
 .social-link:hover {
-  background-color: #480363;
+  background-color: #64038a;
 }
 
 .past-spons {
-  background-color: #0f0227;
+  background-color: black;
   padding: 2rem;
 }
 
@@ -473,6 +473,10 @@ p {
 }
 
 .spons-item {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
   /* effect-clean*/
   /* effect-uncover*/
 }

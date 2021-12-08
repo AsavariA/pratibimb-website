@@ -1,5 +1,5 @@
 .past-spons {
-  background-color: #0f0227;
+  background-color: black;
   padding: 2rem;
 }
 
@@ -22,6 +22,10 @@
 }
 
 .spons-item {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
   /* effect-clean*/
   /* effect-uncover*/
 }

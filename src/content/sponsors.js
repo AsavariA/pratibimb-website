@@ -6,6 +6,21 @@ const sponsors = [
     logo: spykar,
     link: "https://www.spykar.com/",
   },
+  {
+    name: "Spykar",
+    logo: spykar,
+    link: "https://www.spykar.com/",
+  },
+  {
+    name: "Spykar",
+    logo: spykar,
+    link: "https://www.spykar.com/",
+  },
+  {
+    name: "Spykar",
+    logo: spykar,
+    link: "https://www.spykar.com/",
+  },
   //   {
   //     name: "",
   //     logo: "",

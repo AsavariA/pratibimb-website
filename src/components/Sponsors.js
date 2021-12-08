@@ -2,23 +2,46 @@ import React from "react";
 import HeroCommon from "./HeroCommon";
 import SponsItem from "./SponsItem";
 import sponsors from "../content/sponsors";
-import sponsgrid from "../assets/sponsors/spons-grid.png";
+import sponsgrid1 from "../assets/sponsors/spons-grid.webp";
+import sponsgrid2 from "../assets/sponsors/spons-grid-vert.webp";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { Grid } from "@mui/material";
 
 const SponsList = () => {
-  return sponsors.map((sp) => {
-    return (
-      <SponsItem name={sp.name} image={sp.logo} link={sp.link}></SponsItem>
-    );
-  });
+  return (
+    <Grid container spacing={2}>
+      {sponsors.map((sp) => {
+        return (
+          <Grid item xs={6} sm={6} md={3}>
+            <SponsItem
+              name={sp.name}
+              image={sp.logo}
+              link={sp.link}
+            ></SponsItem>
+          </Grid>
+        );
+      })}
+    </Grid>
+  );
 };
 
 const SponsContent = () => {
+  const vert = useMediaQuery("(min-width:600px)");
+
   return (
-    // <SponsList />
-    <div className="past-spons">
-      <h2>PAST SPONSORS</h2>
-      <img src={sponsgrid} alt="" width="100%" height="auto"></img>
-    </div>
+    <>
+      <div className="past-spons">
+        <h2>PAST SPONSORS</h2>
+        <SponsList />
+        <br />
+        <br />
+        {vert ? (
+          <img src={sponsgrid1} alt="" width="100%" height="auto"></img>
+        ) : (
+          <img src={sponsgrid2} alt="" width="100%" height="auto"></img>
+        )}
+      </div>
+    </>
   );
 };
 
