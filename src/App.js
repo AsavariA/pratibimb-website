@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import AboutUsHome from "./components/AboutUsHome";
 import IlluminatiHome from "./components/IlluminatiHome";
+import Footer from "./components/Footer";
 // import Spons from "./components/Sponsors";
 
 const theme = createTheme({
@@ -40,6 +41,7 @@ const AppWrapper = () => {
     <Router>
       <ThemeProvider theme={theme}>
         <App />
+        <Footer />
       </ThemeProvider>
     </Router>
   );

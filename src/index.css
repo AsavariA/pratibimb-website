@@ -7,3 +7,23 @@
   font-family: "Readex Pro", sans-serif;
   color: rgb(202, 197, 197);
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #050505; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(55, 11, 105); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(75, 9, 150); 
+}

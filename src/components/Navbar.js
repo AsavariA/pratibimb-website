@@ -6,7 +6,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import logo from "../assets/prati-white.png";
 
 const Navbar = () => {
-  const navchange = useMediaQuery("(min-width:1200px)");
+  const navchange = useMediaQuery("(min-width:1300px)");
 
   const Navlinks = ({ fd }) => {
     return (
@@ -40,6 +40,11 @@ const Navbar = () => {
           <Box p={3}>
             <Link underline="none" color="inherit">
               <p>Hall of Fame</p>
+            </Link>
+          </Box>
+          <Box p={3}>
+            <Link underline="none" color="inherit">
+              <p>Gallery</p>
             </Link>
           </Box>
         </Box>
