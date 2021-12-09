@@ -8,13 +8,17 @@
 .hero-home {
   background-image: url(../assets/hero.JPG);
   -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+          filter: grayscale(100%);
   -webkit-animation: hue 5s infinite;
-  animation: hue 5s infinite;
+          animation: hue 5s infinite;
 }
 
 .hero-spons {
   background-image: url(../assets/spons-hero.jpg);
+}
+
+.hero-hof {
+  background-image: url(../assets/halloffame-hero.jpg);
 }
 
 .main-text {
@@ -24,14 +28,14 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white;
 }
 

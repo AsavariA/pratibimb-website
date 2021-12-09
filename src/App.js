@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Sponsors from "./components/Sponsors";
 import HeroCommon from "./components/HeroCommon";
 import EventsHome from "./components/EventsHome";
+import HallOfFame from "./components/HallOfFame";
 
 const theme = createTheme({
   palette: {
@@ -37,6 +38,7 @@ const App = () => {
   let routes = useRoutes([
     { path: "/", element: <Home /> },
     { path: "/sponsors", element: <Sponsors /> },
+    { path: "/halloffame", element: <HallOfFame /> },
     // ...
   ]);
   return routes;

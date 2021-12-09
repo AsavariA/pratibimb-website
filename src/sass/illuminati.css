@@ -6,27 +6,20 @@
   background-size: cover;
   background-position: top;
   -webkit-filter: hue-rotate(40deg);
-  filter: hue-rotate(40deg);
+          filter: hue-rotate(40deg);
 }
 
 .illuminati-home .gradient {
   width: 100%;
   height: 100px;
   background: black;
-  background: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(35%, black),
-    to(rgba(0, 0, 0, 0))
-  );
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(35%, black), to(rgba(0, 0, 0, 0)));
   background: linear-gradient(0deg, black 35%, rgba(0, 0, 0, 0) 100%);
 }
 
 @media only screen and (max-width: 900px) {
   .illuminati-home {
     min-height: 70vh;
-    padding-bottom: 1.5rem;
   }
 }
 

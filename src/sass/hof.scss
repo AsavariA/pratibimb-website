@@ -1,0 +1,47 @@
+@import "./variables.scss";
+
+.hall-of-fame {
+  background-color: black;
+  padding: 3rem;
+
+  .glimpses {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 0;
+    h2 {
+      letter-spacing: 2px;
+      font-family: "Playfair Display", serif;
+      font-size: 50px;
+      margin-bottom: 1rem;
+      color: $light-grey;
+      font-weight: lighter;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    padding: 2rem;
+    .glimpses {
+      padding: 1rem 0;
+      h2 {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+.celeb-wrapper {
+    height: 230px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+
+    img {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid lightgray;
+    }
+}
