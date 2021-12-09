@@ -6,6 +6,7 @@ import AboutUsHome from "./components/AboutUsHome";
 import IlluminatiHome from "./components/IlluminatiHome";
 import Footer from "./components/Footer";
 import Sponsors from "./components/Sponsors";
+import Gallery from "./components/Gallery";
 import HeroCommon from "./components/HeroCommon";
 import EventsHome from "./components/EventsHome";
 import HallOfFame from "./components/HallOfFame";
@@ -39,6 +40,7 @@ const App = () => {
     { path: "/", element: <Home /> },
     { path: "/sponsors", element: <Sponsors /> },
     { path: "/halloffame", element: <HallOfFame /> },
+    { path: "/gallery", element: <Gallery /> },
     // ...
   ]);
   return routes;

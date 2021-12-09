@@ -43,7 +43,7 @@ const Navbar = () => {
             </Link>
           </Box>
           <Box p={3}>
-            <Link underline="none" href="#" color="inherit">
+            <Link underline="none" href="/gallery" color="inherit">
               <p>Gallery</p>
             </Link>
           </Box>
