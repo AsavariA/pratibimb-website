@@ -27,8 +27,17 @@ const images2019 = importAll(
   )
 );
 
+  const imagesHallOfFame = importAll(
+    require.context(
+      "../assets/prs/hallOfFame",
+      false,
+      /\.(png|jpg|JPG|jpe?g|svg|webp|jfif)$/
+    )
+  );
+
 const imageNames2020 = Object.keys(images2020);
 const imageNames2019 = Object.keys(images2019);
+const imagesNameHallOfFame = Object.keys(imagesHallOfFame);
 
 const CelebCircle = ({ img, name }) => {
   return (
@@ -70,6 +79,7 @@ const HallOfFame = () => {
             })}
           </Grid>
         </div>
+
         <div className="glimpses">
           <h2>Glimpses of 2019</h2>
           <Grid
@@ -92,6 +102,18 @@ const HallOfFame = () => {
         </div>
         <div className="glimpses">
           <h2>Hall Of Fame</h2>
+          <Grid container spacing={2} alignItems='center' justifyContent='center'>
+            {imagesNameHallOfFame.map((x) => {
+              return (
+                <Grid item key={x} md>
+                  <CelebCircle
+                    img={imagesHallOfFame[x]["default"]}
+                    name={x.split(".")[0].replace(/_/g, " ")}
+                  />
+                </Grid>
+              );
+            })}
+          </Grid>
         </div>
       </div>
     </div>
