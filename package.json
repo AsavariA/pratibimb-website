@@ -15,6 +15,7 @@
     "@testing-library/jest-dom": "^5.16.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "node-sass": "^7.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.0.2",
@@ -26,6 +27,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "scss": "node-sass -watch scss -o css",
     "eject": "react-scripts eject",
     "pretty": "prettier --write \"./**/*.{js,jsx,json,scss,css}\""
   },

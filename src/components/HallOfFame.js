@@ -56,7 +56,7 @@ const HallOfFame = () => {
       <HeroCommon
         imgClass="hero-hof"
         title="HALL OF FAME"
-        subtitle="ALL THE BEAUTIFUL PERSONALITIES WHO HAVE BLESSED PRATIBIMB WITH THIER PRESENCE"
+        subtitle="ALL THE BEAUTIFUL PERSONALITIES WHO HAVE BLESSED PRATIBIMB WITH THEIR PRESENCE"
       ></HeroCommon>
       <div className="hall-of-fame">
         <div className="glimpses">
