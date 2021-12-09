@@ -27,12 +27,14 @@
   }
   .hall-of-fame .glimpses h2 {
     font-size: 30px;
+    text-align: center;
   }
 }
 
 .celeb-wrapper {
-  height: 230px;
-  width: 200px;
+  height: 170px;
+  width: 140px;
+  margin: 5px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,15 +48,48 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10px;
 }
 
 .celeb-wrapper img {
-  height: 200px;
-  width: 200px;
+  height: 140px;
+  width: 140px;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 5px solid #cd60ff;
+  border: 3px solid #e5abff;
+  -webkit-transition: 5ms linear;
+  transition: 5ms linear;
+  overflow: clip;
+}
+
+.celeb-wrapper img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
+.celeb-wrapper p {
+  line-height: 1rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .celeb-wrapper {
+    height: 130px;
+    width: 100px;
+    margin: 5px;
+  }
+  .celeb-wrapper p {
+    font-size: 14px;
+  }
+  .celeb-wrapper img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border: 2px solid #cd60ff;
+  }
 }
 /*# sourceMappingURL=hof.css.map */
