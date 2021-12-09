@@ -49,6 +49,7 @@ const IlluminatiHome = () => {
           </Grid>
         </div>
       </div>
+      <div className="gradient" />
     </div>
   );
 };

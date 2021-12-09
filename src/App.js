@@ -7,6 +7,7 @@ import IlluminatiHome from "./components/IlluminatiHome";
 import Footer from "./components/Footer";
 import Sponsors from "./components/Sponsors";
 import HeroCommon from "./components/HeroCommon";
+import EventsHome from "./components/EventsHome";
 
 const theme = createTheme({
   palette: {
@@ -27,6 +28,7 @@ const Home = () => {
       />
       <AboutUsHome />
       <IlluminatiHome />
+      <EventsHome />
     </div>
   );
 };

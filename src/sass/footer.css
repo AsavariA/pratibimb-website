@@ -11,7 +11,8 @@
   color: #e9e9e9;
 }
 
-.quick-links, .footer-prati {
+.quick-links,
+.footer-prati {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -19,7 +20,8 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .quick-links, .footer-prati {
+  .quick-links,
+  .footer-prati {
     width: 100%;
   }
 }

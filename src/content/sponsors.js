@@ -1,4 +1,4 @@
-import spykar from '../assets/sponsors/spykar.png'
+import spykar from "../assets/sponsors/spykar.png";
 
 const sponsors = [
   {

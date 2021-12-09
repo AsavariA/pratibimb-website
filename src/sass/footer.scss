@@ -5,7 +5,7 @@
   background-color: rgb(17, 17, 17);
 }
 
-.footer-prati h3{
+.footer-prati h3 {
   letter-spacing: 3px;
   font-family: "Playfair Display", serif;
   font-size: 30px;
@@ -13,18 +13,19 @@
   color: $light-grey;
 }
 
-.quick-links, .footer-prati {
+.quick-links,
+.footer-prati {
   width: fit-content;
   margin: auto;
 
-  @media only screen and (max-width: 767px){
+  @media only screen and (max-width: 767px) {
     width: 100%;
   }
 }
 
 p {
-    font-weight: lighter;
-    line-height: 2rem; 
+  font-weight: lighter;
+  line-height: 2rem;
 }
 
 .social-link {

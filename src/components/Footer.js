@@ -2,10 +2,10 @@ import React from "react";
 import { Grid, Box, Link } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-    faFacebook,
-    faTwitter,
-    faInstagram,
-    faLinkedin
+  faFacebook,
+  faTwitter,
+  faInstagram,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
@@ -26,7 +26,10 @@ const Footer = () => {
               >
                 <Box>
                   <a href="https://www.instagram.com/pratibimbvjti/">
-                    <FontAwesomeIcon className="social-link" icon={faInstagram} />
+                    <FontAwesomeIcon
+                      className="social-link"
+                      icon={faInstagram}
+                    />
                   </a>
                 </Box>
                 <Box>
@@ -36,12 +39,18 @@ const Footer = () => {
                 </Box>
                 <Box>
                   <a href="https://www.facebook.com/pratibimbvjti/">
-                    <FontAwesomeIcon className="social-link" icon={faFacebook} />
+                    <FontAwesomeIcon
+                      className="social-link"
+                      icon={faFacebook}
+                    />
                   </a>
                 </Box>
                 <Box>
                   <a href="https://www.linkedin.com/company/pratibimb-vjti/mycompany/">
-                    <FontAwesomeIcon className="social-link" icon={faLinkedin} />
+                    <FontAwesomeIcon
+                      className="social-link"
+                      icon={faLinkedin}
+                    />
                   </a>
                 </Box>
               </Box>
