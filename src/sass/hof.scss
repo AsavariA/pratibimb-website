@@ -29,19 +29,19 @@
 }
 
 .celeb-wrapper {
-    height: 230px;
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px;
+  height: 230px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
 
-    img {
-        height: 200px;
-        width: 200px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 5px solid rgb(205, 96, 255);
-    }
+  img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgb(205, 96, 255);
+  }
 }
