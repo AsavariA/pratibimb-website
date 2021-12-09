@@ -40,4 +40,14 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script>
+    const opacity = document.getElementsByClassName("opacity")[0];
+
+    function opaq() {
+      opacity.style.zIndex = "9";
+    }
+    function normal() {
+      opacity.style.zIndex = "-1";
+    }
+  </script>
 </html>

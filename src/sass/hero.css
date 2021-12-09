@@ -17,6 +17,10 @@
   background-image: url(../assets/spons-hero.jpg);
 }
 
+.hero-gallery {
+  background-image: url(../assets/gallery-hero.jpg);
+}
+
 .main-text {
   height: 70vh;
   display: -webkit-box;
@@ -55,7 +59,7 @@
 
 @media only screen and (max-width: 900px) {
   .main-text {
-    height: 50vh;
+    height: 60vh;
   }
   .main-text h1 {
     font-size: 50px;

@@ -6,6 +6,7 @@ import AboutUsHome from "./components/AboutUsHome";
 import IlluminatiHome from "./components/IlluminatiHome";
 import Footer from "./components/Footer";
 import Sponsors from "./components/Sponsors";
+import Gallery from "./components/Gallery";
 import HeroCommon from "./components/HeroCommon";
 
 const theme = createTheme({
@@ -35,6 +36,7 @@ const App = () => {
   let routes = useRoutes([
     { path: "/", element: <Home /> },
     { path: "/sponsors", element: <Sponsors /> },
+    { path: "/gallery", element: <Gallery /> },
     // ...
   ]);
   return routes;
