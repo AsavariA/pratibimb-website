@@ -143,14 +143,36 @@
   background-image: url(../assets/duetdance1.JPG);
 }
 
-//   #b5 {
+.vjti,
+.prati-about {
+  background-color: transparent;
+  max-width: 800px;
+  padding: 3rem 2rem;
+  margin: auto;
+  h2 {
+    letter-spacing: 3px;
+    font-family: "Playfair Display", serif;
+    font-size: 60px;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: $light-grey;
+  }
+  @media only screen and (max-width: 900px) {
+    h2 {
+      font-size: 40px;
+      line-height: 40px;
+    }
+  }
+}
 
-//   }
-
-//   #b6 {
-
-//   }
-
-//   #b7 {
-
-//   }
+.prati-about {
+  max-width: 1300px;
+  width: 100%;
+  p {
+    text-align: justify;
+    @media only screen and (max-width: 900px) {
+      text-align: left;
+    }
+  }
+}
