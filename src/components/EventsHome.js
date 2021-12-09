@@ -23,7 +23,7 @@ const EventsHome = () => {
             </Carousel>
           ) : null}
         </div>
-        <NeonButton>See All Events</NeonButton>
+        <NeonButton >See All Events</NeonButton>
         <br />
       </div>
     </div>

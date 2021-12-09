@@ -10,6 +10,7 @@ import Gallery from "./components/Gallery";
 import HeroCommon from "./components/HeroCommon";
 import EventsHome from "./components/EventsHome";
 import HallOfFame from "./components/HallOfFame";
+import Events from "./components/Events";
 
 const theme = createTheme({
   palette: {
@@ -41,6 +42,7 @@ const App = () => {
     { path: "/sponsors", element: <Sponsors /> },
     { path: "/halloffame", element: <HallOfFame /> },
     { path: "/gallery", element: <Gallery /> },
+    { path: "/events", element: <Events />},
     // ...
   ]);
   return routes;
