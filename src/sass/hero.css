@@ -33,6 +33,10 @@
   background-image: url(../assets/events_hero.jpg);
 }
 
+.hero-illuminati {
+  background-image: url(../assets/illuminati-hero.jpg);
+}
+
 .main-text {
   height: 70vh;
   display: -webkit-box;
