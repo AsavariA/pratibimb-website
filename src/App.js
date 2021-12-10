@@ -44,7 +44,7 @@ const App = () => {
     { path: "/halloffame", element: <HallOfFame /> },
     { path: "/gallery", element: <Gallery /> },
     { path: "/about", element: <About /> },
-    { path: "/events", element: <Events />},
+    { path: "/events", element: <Events /> },
     // ...
   ]);
   return routes;

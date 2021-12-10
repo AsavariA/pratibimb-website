@@ -24,20 +24,20 @@ const images2020 = importAll(
 );
 
 const images2019 = importAll(
-    require.context(
-      "../assets/prs/2019",
-      false,
-      /\.(png|jpg|JPG|jpe?g|svg|webp|jfif|gif)$/
-    )
-  );
+  require.context(
+    "../assets/prs/2019",
+    false,
+    /\.(png|jpg|JPG|jpe?g|svg|webp|jfif|gif)$/
+  )
+);
 
-  const imagesHallOfFame = importAll(
-    require.context(
-      "../assets/prs/hallOfFame",
-      false,
-      /\.(png|jpg|JPG|jpe?g|svg|webp|jfif)$/
-    )
-  );
+const imagesHallOfFame = importAll(
+  require.context(
+    "../assets/prs/halloffame",
+    false,
+    /\.(png|jpg|JPG|jpe?g|svg|webp|jfif)$/
+  )
+);
 
 const imageNames2020 = Object.keys(images2020);
 const imageNames2019 = Object.keys(images2019);
@@ -65,7 +65,12 @@ const Events = () => {
       <div className="hall-of-fame">
         <div className="glimpses">
           <h2>Upcoming Events</h2>
-          <Grid container spacing={2} alignItems='center' justifyContent='center'>
+          <Grid
+            container
+            spacing={2}
+            alignItems="center"
+            justifyContent="center"
+          >
             {imageNames2020.map((x) => {
               return (
                 <Grid item key={x} md>
@@ -81,7 +86,12 @@ const Events = () => {
 
         <div className="glimpses">
           <h2>2021 Events</h2>
-          <Grid container spacing={2} alignItems='center' justifyContent='center'>
+          <Grid
+            container
+            spacing={2}
+            alignItems="center"
+            justifyContent="center"
+          >
             {imageNames2019.map((x) => {
               return (
                 <Grid item key={x} md>
@@ -96,7 +106,12 @@ const Events = () => {
         </div>
         <div className="glimpses">
           <h2>2019 Events</h2>
-          <Grid container spacing={2} alignItems='center' justifyContent='center'>
+          <Grid
+            container
+            spacing={2}
+            alignItems="center"
+            justifyContent="center"
+          >
             {imagesNameHallOfFame.map((x) => {
               return (
                 <Grid item key={x} md>

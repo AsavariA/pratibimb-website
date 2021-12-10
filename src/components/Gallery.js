@@ -11,7 +11,11 @@ function importAll(r) {
 }
 
 const images = importAll(
-  require.context("../assets/gallery_webp", false, /\.(png|jpg|JPG|jpe?g|svg|webp)$/)
+  require.context(
+    "../assets/gallery_webp",
+    false,
+    /\.(png|jpg|JPG|jpe?g|svg|webp)$/
+  )
 );
 
 var imageNames = Object.keys(images);

@@ -12,6 +12,7 @@
     "@fortawesome/react-fontawesome": "^0.1.16",
     "@mui/icons-material": "^5.2.1",
     "@mui/material": "^5.2.3",
+    "@mui/styles": "^5.2.3",
     "@testing-library/jest-dom": "^5.16.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -21,6 +22,7 @@
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
     "react-swipeable": "^6.2.0",
+    "react-swipeable-views": "^0.14.0",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
