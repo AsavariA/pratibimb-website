@@ -11,7 +11,7 @@ function importAll(r) {
 }
 
 const images = importAll(
-  require.context("../assets/gallery", false, /\.(png|jpg|JPG|jpe?g|svg)$/)
+  require.context("../assets/gallery_webp", false, /\.(png|jpg|JPG|jpe?g|svg|webp)$/)
 );
 
 var imageNames = Object.keys(images);
@@ -41,15 +41,15 @@ imageNames = shuffle(imageNames);
 export default function Gallery() {
   const [state, setState] = React.useState("-1");
 
-  const opacityStyle = {
-    position: "absolute",
-    top: "0",
-    left: "0",
-    height: "100vh",
-    width: "99vw",
-    zIndex: `${state}`,
-    backgroundColor: "#000000bf",
-  };
+  // const opacityStyle = {
+  //   position: "absolute",
+  //   top: "0",
+  //   left: "0",
+  //   height: "100vh",
+  //   width: "99vw",
+  //   zIndex: `${state}`,
+  //   backgroundColor: "#000000bf",
+  // };
 
   return (
     <div className="gallery">
@@ -60,6 +60,7 @@ export default function Gallery() {
       ></HeroCommon>
       <div className="wrapper">
         <div></div>
+        <br />
         <Grid container spacing={2} style={{ maxWidth: "inherit" }}>
           <Grid
             item

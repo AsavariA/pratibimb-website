@@ -1,10 +1,10 @@
 import React from "react";
 import HeroCommon from "./HeroCommon";
 import { Grid } from "@mui/material";
-import { past_events } from "../content/past_events";
-import Carousel from "./Carousel";
-import { CarouselItem } from "./Carousel";
-import EventCard from "./EventCard";
+// import { past_events } from "../content/past_events";
+// import Carousel from "./Carousel";
+// import { CarouselItem } from "./Carousel";
+// import EventCard from "./EventCard";
 
 function importAll(r) {
   let images = {};
