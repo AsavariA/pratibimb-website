@@ -6,6 +6,7 @@ import Team3 from "./Team3";
 const Team = () => {
   return (
     <div className="team">
+    <h2>THE TORCHBEARERS</h2>
       <div className="team-sec1">
         <h3>The Big Three</h3>
         <Team1 />

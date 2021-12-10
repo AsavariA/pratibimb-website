@@ -180,6 +180,18 @@
 .team {
   background-color: #000;
   padding: 3rem;
+
+  h2 {
+    letter-spacing: 3px;
+    font-family: "Playfair Display", serif;
+    font-size: 60px;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: $light-grey;
+    padding: 0 1rem;
+  }
+
   .team-sec1 {
     h3 {
       font-family: "Playfair Display", serif;
@@ -192,9 +204,14 @@
   }
   @media only screen and (max-width: 900px) {
     padding: 0.5rem;
+    h2 {
+      font-size: 30px;
+      line-height: 40px;
+      padding: 2rem 1rem 0 1rem;
+    }
     .team-sec1 {
       h3 {
-        font-size: 30px;
+        font-size: 25px;
         margin-top: 1rem;
       }
     }

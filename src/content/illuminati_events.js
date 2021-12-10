@@ -3,23 +3,15 @@ import jingles from "../assets/illuminati/jingles.png"
 
 const illuminati_events = [
   {
-    name: "Comic Strip",
+    name: "Ek Katha Hamare Department Ki",
     poster: comic,
-    overview: "sketch story",
-    results: ["Tronics", "CS", "IT"], //list of branch rankings like ['extc', 'civil', ...]
+    results: ["Production", "IT", "Mechanical"], //list of branch rankings like ['extc', 'civil', ...]
   },
   {
-    name: "Jingles",
+    name: "The Branch Symphony",
     poster: jingles,
-    overview: "poster poster poster",
-    results: ["Tronics", "CS", "IT"], //list of branch rankings like ['extc', 'civil', ...]
+    results: ["Civil", "Production", "Mechanical"], //list of branch rankings like ['extc', 'civil', ...]
   },
-  // {
-  //   name: "",
-  //   poster: "",
-  //   overview: "",
-  //   results: [], //list of branch rankings like ['extc', 'civil', ...]
-  // },
 ];
 
 export default illuminati_events;

@@ -142,7 +142,7 @@ export default function Team2() {
             <Grid item md>
               <MemberCard
                 color="purple"
-                name="Gayatri Vernerkar"
+                name="Gayatri Vernekar"
                 img={GAYATRI_VERNEKAR}
                 post="Public Relations Head"
               />
