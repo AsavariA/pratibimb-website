@@ -11,6 +11,7 @@ import HeroCommon from "./components/HeroCommon";
 import EventsHome from "./components/EventsHome";
 import HallOfFame from "./components/HallOfFame";
 import About from "./components/About";
+import Illuminati from "./components/Illuminati";
 import Events from "./components/Events";
 
 const theme = createTheme({
@@ -44,6 +45,7 @@ const App = () => {
     { path: "/halloffame", element: <HallOfFame /> },
     { path: "/gallery", element: <Gallery /> },
     { path: "/about", element: <About /> },
+    { path: "/illuminati", element: <Illuminati />},
     { path: "/events", element: <Events /> },
     // ...
   ]);

@@ -1,4 +1,4 @@
-export const illuminati_events = [
+const illuminati_events = [
   {
     name: "",
     poster: "",
@@ -18,3 +18,5 @@ export const illuminati_events = [
     results: [], //list of branch rankings like ['extc', 'civil', ...]
   },
 ];
+
+export default illuminati_events;

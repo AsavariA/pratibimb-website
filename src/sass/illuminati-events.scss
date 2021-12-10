@@ -1,0 +1,165 @@
+@import "./variables.scss";
+
+.illuminati {
+
+    background-color: black;
+    padding: 3rem;
+
+    .illuminati-events {
+        max-width: 1200px;
+        margin: auto;
+        padding: 2rem 0;
+        h2 {
+          letter-spacing: 2px;
+          font-family: "Playfair Display", serif;
+          font-size: 50px;
+          margin-bottom: 1rem;
+          color: $light-grey;
+          font-weight: lighter;
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+        .illuminati-events{
+            padding: 1rem 0;
+            h2 {
+                font-size: 30px;
+            }
+        }       
+    }
+}
+
+.illuminati::selection{
+    background-color: violet;
+}
+
+.illuminati-even-item:hover{
+    box-shadow: 5px 5px 10px $dark-purple;
+}
+
+.illuminati-odd-item:hover{
+    box-shadow: -5px 5px 10px $dark-purple;
+}
+
+.illuminati-even-item{
+    padding: 25px 0px 25px 0px;
+
+    .even-text{
+        align-items: right;
+
+        h2 {
+            letter-spacing: 2px;
+            font-size: 35px;
+            margin-bottom: 1rem;
+            color: $light-grey;
+            font-weight: bold;
+            display: inline-block;
+            position: relative;
+            text-decoration: none;
+            width: 500px;
+            padding: 10px;
+        }
+
+        h3 {
+            font-size: 25px;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            font-weight: normal;
+            color: $light-grey;
+        }
+
+        ul {
+            font-size: 20px;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            font-weight: normal;
+            float: left;
+            padding: 50px;
+        }
+
+        h2:hover::after {
+            width: 100%;
+            left: 0;
+        }
+          
+        h2::after {
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 4px;
+            left: 0;
+            position: absolute;
+            background: linear-gradient(to left, #5b035e, #f69ec4 100%);
+            transition: width .5s ease 0s, right .5s ease 0s;
+            width: 0;
+        }
+    }
+}
+
+.illuminati-odd-item{
+    padding: 25px 0px 25px 0px;
+
+    .odd-text{
+
+        text-align: right;
+
+        h2 {
+            letter-spacing: 2px;
+            font-size: 35px;
+            margin-bottom: 1rem;
+            color: $light-grey;
+            font-weight: bold;
+            display: inline-block;
+            position: relative;
+            text-decoration: none;
+            width: 500px;
+            padding: 10px;
+        }
+
+        h3 {
+            font-size: 25px;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            font-weight: normal;
+            color: $light-grey;
+        }
+
+        ul {
+            font-size: 20px;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            font-weight: normal;
+            float: right;
+            color: $light-grey;
+        }
+
+        h2:hover::after {
+            width: 100%;
+            right: 0;
+        }
+          
+        h2::after {
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 4px;
+            right: 0;
+            position: absolute;
+            background: linear-gradient(to right, #5b035e, #f69ec4 100%);
+            transition: width .5s ease 0s, right .5s ease 0s;
+            width: 0;
+        }
+    }
+}
+
+.past-illu-wrapper {
+    height: 230px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}

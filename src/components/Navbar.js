@@ -28,7 +28,7 @@ const Navbar = () => {
             </Link>
           </Box>
           <Box p={3}>
-            <Link underline="none" href="#" color="inherit">
+            <Link underline="none" href="/illuminati" color="inherit">
               <p>Illuminati</p>
             </Link>
           </Box>
