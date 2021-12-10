@@ -5,7 +5,7 @@ import { Grid } from "@mui/material";
 function importAll(r) {
   let images = {};
   r.keys().map((item, index) => {
-    images[item.replace("./", "")] = r(item);
+    return (images[item.replace("./", "")] = r(item));
   });
   return images;
 }
@@ -38,57 +38,56 @@ function shuffle(array) {
 
 imageNames = shuffle(imageNames);
 
-const opacity = document.getElementsByClassName("opacity")[0];
-
-function opaq() {
-  opacity.style.zIndex = "9";
-}
-function normal() {
-  opacity.style.zIndex = "-1";
-}
-
-function GalleryItem() {
-  return imageNames.map((i_name, key) => {
-    return (
-      <img
-        className="card img-responsive"
-        src={images[i_name]["default"]}
-        alt="Pratibimb Photo"
-        key={key}
-      ></img>
-    );
-  });
-}
-
-function ImageList() {
-  return (
-    <Grid container spacing={2} style={{ maxWidth: "inherit" }}>
-      <Grid
-        item
-        xs={12}
-        sm={12}
-        md={9}
-        style={{ maxWidth: "inherit", margin: "auto" }}
-      >
-        <div id="gallery">
-          <GalleryItem></GalleryItem>
-        </div>
-      </Grid>
-    </Grid>
-  );
-}
-
 export default function Gallery() {
+  const [state, setState] = React.useState("-1");
+
+  const opacityStyle = {
+    position: "absolute",
+    top: "0",
+    left: "0",
+    height: "100vh",
+    width: "99vw",
+    zIndex: `${state}`,
+    backgroundColor: "#000000bf",
+  };
+
   return (
     <div className="gallery">
-      <div className="opacity" style={{ zIndex: "-1" }}></div>
+      <HeroCommon
+        imgClass="hero-gallery"
+        title="GALLERY"
+        subtitle="ALL THE BEST MOMENTS, CAPTURED"
+      ></HeroCommon>
       <div className="wrapper">
-        <HeroCommon
-          imgClass="hero-gallery"
-          title="GALLERY"
-          subtitle="ALL THE BEST MOMENTS, CAPTURED"
-        ></HeroCommon>
-        <ImageList />
+        <div></div>
+        <Grid container spacing={2} style={{ maxWidth: "inherit" }}>
+          <Grid
+            item
+            xs={9}
+            sm={9}
+            md={9}
+            style={{ maxWidth: "inherit", margin: "auto" }}
+          >
+            <div id="gallery">
+              {imageNames.map((i_name, key) => {
+                return (
+                  <div>
+                    <img
+                      className="card img-responsive"
+                      src={images[i_name]["default"]}
+                      alt="Pratibimb"
+                      // onMouseOver={opaq}
+                      // onMouseDown={normal}
+                      onMouseEnter={() => setState("9")}
+                      onMouseLeave={() => setState("-1")}
+                      key={key}
+                    ></img>
+                  </div>
+                );
+              })}
+            </div>
+          </Grid>
+        </Grid>
       </div>
     </div>
   );

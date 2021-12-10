@@ -29,8 +29,10 @@
 
 @media (max-width: 600px) {
   #gallery {
-    -webkit-column-count: 1;
-    column-count: 1;
+    -webkit-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 20px;
+    column-gap: 20px;
   }
 }
 
@@ -39,24 +41,14 @@
   height: auto;
   margin: 4% auto;
   -webkit-box-shadow: -3px 5px 15px #000;
-  box-shadow: -3px 5px 15px #000;
+          box-shadow: -3px 5px 15px #000;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 .card:hover {
-  -webkit-transform: scale(2);
-  transform: scale(2);
-  z-index: 10;
-}
-
-.opacity {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0px;
-  background-color: #000000;
-  opacity: 0.7;
-  z-index: -1;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  z-index: 200;
 }
 /*# sourceMappingURL=gallery.css.map */

@@ -276,7 +276,7 @@
       grid-template-rows: 1fr 1fr;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
-      grid-template-areas: "big-top big-top big-top small-top small-top" "small-middle small-middle big-middle big-middle big-middle";
+      grid-template-areas: "big-top big-top big-top small-top small-top" "small-middle small-middle big-middle big-middle big-middle";
 }
 
 .block {
@@ -1071,8 +1071,10 @@ p {
 
 @media (max-width: 600px) {
   #gallery {
-    -webkit-column-count: 1;
-    column-count: 1;
+    -webkit-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 20px;
+    column-gap: 20px;
   }
 }
 
@@ -1087,18 +1089,8 @@ p {
 }
 
 .card:hover {
-  -webkit-transform: scale(2);
-          transform: scale(2);
-  z-index: 10;
-}
-
-.opacity {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0px;
-  background-color: #000000;
-  opacity: 0.7;
-  z-index: -1;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  z-index: 200;
 }
 /*# sourceMappingURL=index.css.map */
