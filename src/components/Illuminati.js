@@ -15,7 +15,7 @@ const IlluminatiList = () => {
         {illuminati_events.map((il, index) => {
           return (
             <Grid item xs={12} sm={6} md={6} lg={4}>
-              <IlluminatiCard
+              <IlluminatiCard className="illuminati-card-main"
                 name={il.name}
                 poster={il.poster}
                 results={il.results}
@@ -26,7 +26,7 @@ const IlluminatiList = () => {
       </Grid>
     </div>
   );
-};
+};//
 
 const Illuminati = () => {
   return (
