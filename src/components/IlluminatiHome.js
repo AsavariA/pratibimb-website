@@ -42,7 +42,7 @@ const IlluminatiHome = () => {
                 </p>
                 <br />
                 <div className="neon-ill">
-                  <NeonButton>Delve Deeper!</NeonButton>
+                  <NeonButton href="/Illuminati">Delve Deeper!</NeonButton>
                 </div>
               </div>
             </Grid>

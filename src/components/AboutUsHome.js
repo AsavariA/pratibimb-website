@@ -39,7 +39,7 @@ const AboutUsHome = () => {
         </Grid>
       </Grid>
       <div style={{ margin: "auto", marginTop: "3rem", width: "fit-content" }}>
-        <NeonButton>Know More!</NeonButton>
+        <NeonButton href="/About">Know More!</NeonButton>
       </div>
     </div>
   );

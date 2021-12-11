@@ -60,13 +60,13 @@ const Footer = () => {
             <div className="quick-links">
               <h3>Quick Links</h3>
               <br />
-              <Link underline="none" color="inherit">
+              <Link href="/" underline="none" color="inherit">
                 <p>Home</p>
               </Link>
-              <Link underline="none" color="inherit">
+              <Link href="About" underline="none" color="inherit">
                 <p>About</p>
               </Link>
-              <Link underline="none" color="inherit">
+              <Link href="/hallOfFame" underline="none" color="inherit" >
                 <p>Hall of Fame</p>
               </Link>
             </div>
@@ -75,16 +75,16 @@ const Footer = () => {
             <div className="quick-links">
               <h3>Quick Links</h3>
               <br />
-              <Link underline="none" color="inherit">
+              <Link href="/illuminati" underline="none" color="inherit">
                 <p>Illuminati</p>
               </Link>
-              <Link underline="none" color="inherit">
+              <Link href="/Sponsors" underline="none" color="inherit">
                 <p>Sponsors</p>
               </Link>
-              <Link underline="none" color="inherit">
+              <Link href="/Events" underline="none" color="inherit">
                 <p>Events</p>
               </Link>
-              <Link underline="none" color="inherit">
+              <Link href="Gallery" underline="none" color="inherit">
                 <p>Gallery</p>
               </Link>
             </div>
