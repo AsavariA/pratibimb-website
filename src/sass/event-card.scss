@@ -1,3 +1,76 @@
+// @import "./variables.scss";
+
+// .card-pratibimb-event{
+//     position: relative;
+//     // max-width: 350px;
+//     max-width: 300px;
+//     // height: 200px;
+//     height: 230px;
+//     border-radius: 10px;
+//     transition: 0.3s;
+//     // padding: 20px 50px;
+//     padding: 20px;
+//     background-color: rgba(255, 255, 255, 0.75);
+//     cursor: pointer;
+//     margin: auto;
+//     // overflow: hidden; 
+
+//     .event-content{
+//         //padding: 10px 20px;
+//         text-align: center;
+//         transform: translateY(-150px);
+//         opacity: 1;
+//         transition: all;
+
+
+//         p{
+//             font-size: 13px;
+//             color: black;
+//             font-weight: 300;
+//             line-height: 1.5rem;
+//         }
+
+//         h2 {
+//             letter-spacing: normal !important;
+//             font-size: 10px;
+//             font-weight: bold;
+//             text-align: center;
+//             color: blue;
+//             margin-top: 0.5rem;
+//             font-family: "Readex Pro", sans-serif !important;
+//         }
+//     }
+// }
+
+// .card-pratibimb-event:hover{
+//     height: 350px;
+
+//     .content{
+//         transform: translateY(-105px);
+//     }
+// }
+
+// .imgbox{
+//     position: relative;
+//     width: 100%;
+//     height: 100%;
+//     transform: translateY(-100px);
+//     z-index: 99;   
+//     padding-top: 30px;
+//     //padding-bottom: 40px;
+
+//     img{
+//         width: 100%;
+//         // height: 100%;
+//         border-radius: 10px;
+//         box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
+//         object-fit: cover;
+//     }    
+// }
+
+// //
+
+
 @import "./variables.scss";
 
 .card-pratibimb-event{
@@ -15,13 +88,12 @@
     margin: auto;
     // overflow: hidden; 
 
-    .content{
+    .pratibimb-event-content{
         //padding: 10px 20px;
         text-align: center;
         transform: translateY(-150px);
         opacity: 1;
         transition: all;
-
 
         p{
             font-size: 13px;
@@ -44,7 +116,7 @@
     }
 }
 
-.card-pratibimb-event:hover{
+.card-illuminati:hover{
     height: 350px;
 
     .content{
@@ -63,11 +135,11 @@
 
     img{
         width: 100%;
-        // height: 100%;
         border-radius: 10px;
         box-shadow: 0px 5px 20px rgba(0,0,0,0.5);
-        object-fit: cover;
-    }    
+        band
+    };
+}
 }
 
-//
+

@@ -2,17 +2,38 @@ import React from "react";
 import HeroCommon from "./HeroCommon";
 import { Grid } from "@mui/material";
 import past_events from "../content/past_events";
+import current_events from "../content/current_events";
 import EventCard from "./EventCard";
 import useMediaQuery from "@mui/material/useMediaQuery";
 // import IlluminatiCard from "./IlluminatiCard";
 
-const EventList = () => {
+const EventListPast = () => {
   const justify = useMediaQuery("(min-width:700px)");
-////
   return (
     <div>
       <Grid container spacing={5} justifyContent={justify ? "start" : "center"}>
         {past_events.map((il, index) => {
+          return (
+            <Grid item xs={12} sm={6} md={6} lg={4} key={index}>
+              <EventCard 
+                name={il.name}
+                image={il.image}
+                desc={il.desc}
+              />
+            </Grid>
+          );
+        })}
+      </Grid>
+    </div>
+  );
+};//
+
+const EventListCurrent = () => {
+  const justify = useMediaQuery("(min-width:700px)");
+  return (
+    <div>
+      <Grid container spacing={5} justifyContent={justify ? "start" : "center"}>
+        {current_events.map((il, index) => {
           return (
             <Grid item xs={12} sm={6} md={6} lg={4} key={index}>
               <EventCard 
@@ -70,9 +91,17 @@ const Events = () => {
       <div className="pratibimb-events-wrapper">
         <div className="pratibimb-events">
           <h2>Events of 2021</h2>
-          <EventList />
+          <EventListCurrent/>
         </div>
       </div>
+      
+      <div className="pratibimb-events-wrapper">
+        <div className="pratibimb-events">
+          <h2>Events of 2019</h2>
+          <EventListPast />
+        </div>
+      </div>
+     
     </div>
   );
 };

@@ -6,7 +6,7 @@ const EventCard = ({name, image, desc}) => {
       <div className="imgbox">
         <img src={image} alt='' loading="lazy"/>
       </div>
-      <div className="content">
+      <div className="pratibimb-event-content">
         <p>{desc}</p>
         <br/>
         <h2>{name}</h2>
@@ -14,6 +14,7 @@ const EventCard = ({name, image, desc}) => {
   </div>
   );
 };
-
-
+////
+//
+//
 export default EventCard;

@@ -18,7 +18,7 @@ import tee_launch from "/home/nishh/pratibimb-website/src/assets/events/tee_laun
 import trad_show from "../assets/events/trad_show.JPG";
 import treasure_hunt from "../assets/events/treasure_hunt.jpg";
 import jingles from "../assets/illuminati/jingles.png"
-//
+////
 //
 export const past_events = [
   {
@@ -83,7 +83,7 @@ export const past_events = [
     name: "Mumbai's got Talent",
     image: mumbai_talent,
   },
-  {
+  {//
     name: "Garba Night",
     image: garba_night,
   },
@@ -102,4 +102,5 @@ export const past_events = [
 
 ];
 
-export default past_events;
+export default past_events;//
+//

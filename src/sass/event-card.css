@@ -11,7 +11,7 @@
   margin: auto;
 }
 
-.card-pratibimb-event .content {
+.card-pratibimb-event .event-content {
   text-align: center;
   -webkit-transform: translateY(-150px);
           transform: translateY(-150px);
@@ -20,19 +20,19 @@
   transition: all;
 }
 
-.card-pratibimb-event .content p {
+.card-pratibimb-event .event-content p {
   font-size: 13px;
   color: black;
   font-weight: 300;
   line-height: 1.5rem;
 }
 
-.card-pratibimb-event .content h2 {
+.card-pratibimb-event .event-content h2 {
   letter-spacing: normal !important;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: bold;
   text-align: center;
-  color: red;
+  color: blue;
   margin-top: 0.5rem;
   font-family: "Readex Pro", sans-serif !important;
 }
