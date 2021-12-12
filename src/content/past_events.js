@@ -14,14 +14,22 @@ import singing from "../assets/events/singing.JPG";
 import solo_dance from "../assets/events/solo_dance.JPG";
 import station_painting from "../assets/events/station_painting.jpg";
 import talk_show from "../assets/events/talk_show.jpg";
-import tee_launch from "../assets/events/tee_launch.JPG";
+import tee_launch from "/home/nishh/pratibimb-website/src/assets/events/tee_launch.JPG";
 import trad_show from "../assets/events/trad_show.JPG";
 import treasure_hunt from "../assets/events/treasure_hunt.jpg";
-
+import jingles from "../assets/illuminati/jingles.png"
+//
+//
 export const past_events = [
   {
-    name: "Tee Launch",
+    name: "T-Launch",
     image: tee_launch,
+    desc: "All branches flaunt their branch T's"
+  },
+  {
+    name: "Treasure Hunt",
+    image: treasure_hunt,
+    desc : "Hello",
   },
   {
     name: "Band Wars",
@@ -72,10 +80,6 @@ export const past_events = [
     image: sand_art,
   },
   {
-    name: "Treasure Hunt",
-    image: treasure_hunt,
-  },
-  {
     name: "Mumbai's got Talent",
     image: mumbai_talent,
   },
@@ -95,4 +99,7 @@ export const past_events = [
     name: "Concerts",
     image: concerts,
   },
+
 ];
+
+export default past_events;

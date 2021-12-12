@@ -1,0 +1,57 @@
+.illuminati-theme {
+    background-color: black;
+    padding: 5rem 2rem;
+    max-width: 900px;
+    margin: auto;
+    h2 {
+        letter-spacing: 3px;
+        font-family: "Playfair Display", serif;
+        font-size: 50px;
+        color: $light-grey;
+        font-weight: lighter;
+        text-align: center;
+      }
+      @media only screen and (max-width: 900px) {
+        padding: 2rem;
+        h2 {
+            font-size: 30px;
+        }    
+    }
+}
+
+.pratibimb-events-wrapper {
+
+    background-color: black;
+    padding: 2rem;
+    background-image: url(../assets/illuminati-events-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .pratibimb-events {
+        max-width: 1200px;
+        margin: auto;
+        padding: 2rem;
+        padding-top: 0;
+        background-color: transparent;
+        //background-attachment: fixed
+        h2 {
+          letter-spacing: 2px;
+          font-family: "Playfair Display", serif;
+          font-size: 50px;
+          margin-bottom: 2rem;
+          color: $light-grey;
+          font-weight: lighter;
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+        .pratibimb-events{
+            padding: 1rem 0;
+            h2 {
+                font-size: 30px;
+                margin-bottom: 1rem;
+            }
+        }       
+    }
+}

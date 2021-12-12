@@ -5,6 +5,7 @@ import illuminati_events from "../content/illuminati_events";
 import IlluminatiCard from "./IlluminatiCard";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import NeonButton from "./NeonButton";
+
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 
@@ -23,7 +24,6 @@ const IlluminatiList = () => {
           return (
             <Grid item xs={12} sm={6} md={6} lg={4} key={index}>
               <IlluminatiCard
-                className="illuminati-card-main"
                 name={il.name}
                 poster={il.poster}
                 results={il.results}

@@ -1,27 +1,24 @@
 import React from "react";
 import HeroCommon from "./HeroCommon";
 import { Grid } from "@mui/material";
-// import { past_events } from "../content/past_events";
-// import Carousel from "./Carousel";
-// import { CarouselItem } from "./Carousel";
-// import EventCard from "./EventCard";
-import illuminati_events from "../content/illuminati_events";
-import IlluminatiCard from "./IlluminatiCard";
+import past_events from "../content/past_events";
+import EventCard from "./EventCard";
 import useMediaQuery from "@mui/material/useMediaQuery";
+// import IlluminatiCard from "./IlluminatiCard";
 
-const IlluminatiList = () => {
+const EventList = () => {
   const justify = useMediaQuery("(min-width:700px)");
-
+////
   return (
     <div>
       <Grid container spacing={5} justifyContent={justify ? "start" : "center"}>
-        {illuminati_events.map((il, index) => {
+        {past_events.map((il, index) => {
           return (
-            <Grid item xs={12} sm={6} md={6} lg={4}>
-              <IlluminatiCard className="illuminati-card-main"
+            <Grid item xs={12} sm={6} md={6} lg={4} key={index}>
+              <EventCard 
                 name={il.name}
-                poster={il.poster}
-                results={il.results}
+                image={il.image}
+                desc={il.desc}
               />
             </Grid>
           );
@@ -32,6 +29,7 @@ const IlluminatiList = () => {
 };//
 
 const Events = () => {
+  const justify = useMediaQuery("(min-width:700px)");
   return (
     <div>
       <HeroCommon
@@ -69,14 +67,14 @@ const Events = () => {
        
         </div>
       </div>
-      <div className="illuminati-events-wrapper">
-        <div className="illuminati-events">
+      <div className="pratibimb-events-wrapper">
+        <div className="pratibimb-events">
           <h2>Events of 2021</h2>
-          <IlluminatiList />
+          <EventList />
         </div>
       </div>
     </div>
   );
 };
-
+//
 export default Events;
