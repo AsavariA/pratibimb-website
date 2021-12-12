@@ -4,12 +4,12 @@ import jingles from "../assets/illuminati/jingles.png"
 const illuminati_events = [
   {
     name: "Ek Katha Hamare Department Ki",
-    poster: comic,
+    image: comic,
     results: ["Production", "IT", "Mechanical"], 
   },
   {
     name: "The Branch Symphony",
-    poster: jingles,
+    image: jingles,
     results: ["Civil", "Production", "Mechanical"], 
   },
 ];

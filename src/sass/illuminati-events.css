@@ -23,10 +23,17 @@
   }
 }
 
+.ill-background {
+  background-image: url(../assets/illuminati-events-bg.jpg);
+}
+
+.pa-background {
+  background-image: url(../assets/prati_events_bg2.jpg);
+}
+
 .illuminati-events-wrapper {
   background-color: black;
   padding: 2rem;
-  background-image: url(../assets/illuminati-events-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -57,5 +64,9 @@
     font-size: 30px;
     margin-bottom: 1rem;
   }
+}
+
+.illuminati-events-wrapper .pa {
+  background: url(../assets/prati_events_bg1.jpg);
 }
 /*# sourceMappingURL=illuminati-events.css.map */

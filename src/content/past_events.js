@@ -14,12 +14,10 @@ import singing from "../assets/events/singing.JPG";
 import solo_dance from "../assets/events/solo_dance.JPG";
 import station_painting from "../assets/events/station_painting.jpg";
 import talk_show from "../assets/events/talk_show.jpg";
-import tee_launch from "/home/nishh/pratibimb-website/src/assets/events/tee_launch.JPG";
+import tee_launch from "../assets/events/tee_launch.JPG";
 import trad_show from "../assets/events/trad_show.JPG";
 import treasure_hunt from "../assets/events/treasure_hunt.jpg";
-import jingles from "../assets/illuminati/jingles.png"
-////
-//
+
 export const past_events = [
   {
     name: "T-Launch",

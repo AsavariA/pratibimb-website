@@ -2,7 +2,7 @@ import React from "react";
 import { past_events } from "../content/past_events";
 import Carousel from "./Carousel";
 import { CarouselItem } from "./Carousel";
-import EventCard from "./EventCard";
+import EventCardHome from "./EventCardHome";
 import NeonButton from "./NeonButton";
 
 const EventsHome = () => {
@@ -16,7 +16,7 @@ const EventsHome = () => {
               {past_events.slice(0, 12).map((e, key) => {
                 return (
                   <CarouselItem key={key}>
-                    <EventCard name={e.name} image={e.image} />
+                    <EventCardHome name={e.name} image={e.image} />
                   </CarouselItem>
                 );
               })}

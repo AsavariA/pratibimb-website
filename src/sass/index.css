@@ -789,7 +789,7 @@ p {
 
 .carousel {
   overflow: hidden;
-  margin: 2rem 0;
+  margin: 2rem;
 }
 
 .inner {
@@ -1324,10 +1324,17 @@ p {
   }
 }
 
+.ill-background {
+  background-image: url(../assets/illuminati-events-bg.jpg);
+}
+
+.pa-background {
+  background-image: url(../assets/prati_events_bg2.jpg);
+}
+
 .illuminati-events-wrapper {
   background-color: black;
   padding: 2rem;
-  background-image: url(../assets/illuminati-events-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1360,7 +1367,28 @@ p {
   }
 }
 
+.illuminati-events-wrapper .pa {
+  background: url(../assets/prati_events_bg1.jpg);
+}
+
 .card-illuminati {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.card-illuminati h3 {
+  color: #FC271E;
+}
+
+.card-pa {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.card-pa h3 {
+  color: #ffe6a2;
+}
+
+.card-illuminati,
+.card-pa {
   position: relative;
   max-width: 300px;
   height: 230px;
@@ -1368,12 +1396,14 @@ p {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.75);
   cursor: pointer;
   margin: auto;
 }
 
-.card-illuminati .content {
+.card-illuminati .content-illuminati,
+.card-illuminati .content-pa,
+.card-pa .content-illuminati,
+.card-pa .content-pa {
   text-align: center;
   -webkit-transform: translateY(-150px);
           transform: translateY(-150px);
@@ -1382,19 +1412,24 @@ p {
   transition: all;
 }
 
-.card-illuminati .content p {
+.card-illuminati .content-illuminati p,
+.card-illuminati .content-pa p,
+.card-pa .content-illuminati p,
+.card-pa .content-pa p {
   font-size: 13px;
   color: black;
   font-weight: 300;
   line-height: 1.5rem;
 }
 
-.card-illuminati .content h2 {
+.card-illuminati .content-illuminati h3,
+.card-illuminati .content-pa h3,
+.card-pa .content-illuminati h3,
+.card-pa .content-pa h3 {
   letter-spacing: normal !important;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
-  color: red;
   margin-top: 0.5rem;
   font-family: "Readex Pro", sans-serif !important;
 }
@@ -1403,9 +1438,18 @@ p {
   height: 350px;
 }
 
-.card-illuminati:hover .content {
+.card-illuminati:hover .content-illuminati {
   -webkit-transform: translateY(-105px);
           transform: translateY(-105px);
+}
+
+.card-pa:hover {
+  height: 250px;
+}
+
+.card-pa:hover .content-pa {
+  -webkit-transform: translateY(-18px);
+          transform: translateY(-18px);
 }
 
 .imgbox {
@@ -1423,75 +1467,6 @@ p {
   border-radius: 10px;
   -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.card-pratibimb-event {
-  position: relative;
-  max-width: 300px;
-  height: 230px;
-  border-radius: 10px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.75);
-  cursor: pointer;
-  margin: auto;
-}
-
-.card-pratibimb-event .content {
-  text-align: center;
-  -webkit-transform: translateY(-150px);
-          transform: translateY(-150px);
-  opacity: 1;
-  -webkit-transition: all;
-  transition: all;
-}
-
-.card-pratibimb-event .content p {
-  font-size: 13px;
-  color: black;
-  font-weight: 300;
-  line-height: 1.5rem;
-}
-
-.card-pratibimb-event .content h2 {
-  letter-spacing: normal !important;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-  color: red;
-  margin-top: 0.5rem;
-  font-family: "Readex Pro", sans-serif !important;
-}
-
-.card-pratibimb-event:hover {
-  height: 350px;
-}
-
-.card-pratibimb-event:hover .content {
-  -webkit-transform: translateY(-105px);
-          transform: translateY(-105px);
-}
-
-.imgbox {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: translateY(-100px);
-          transform: translateY(-100px);
-  z-index: 99;
-  padding-top: 30px;
-}
-
-.imgbox img {
-  width: 100%;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
-          box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .illuminati-theme {
@@ -1522,7 +1497,6 @@ p {
 .pratibimb-events-wrapper {
   background-color: black;
   padding: 2rem;
-  background-image: url(../assets/illuminati-events-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

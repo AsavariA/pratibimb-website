@@ -2,7 +2,7 @@ import React from "react";
 import { Grid } from "@mui/material";
 import HeroCommon from "./HeroCommon";
 import illuminati_events from "../content/illuminati_events";
-import IlluminatiCard from "./IlluminatiCard";
+import CommonCard from "./CommonCard";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import NeonButton from "./NeonButton";
 
@@ -23,10 +23,11 @@ const IlluminatiList = () => {
         {illuminati_events.map((il, index) => {
           return (
             <Grid item xs={12} sm={6} md={6} lg={4} key={index}>
-              <IlluminatiCard
+              <CommonCard
                 name={il.name}
-                poster={il.poster}
+                image={il.image}
                 results={il.results}
+                type='ill'
               />
               <br />
               <br />
@@ -76,11 +77,11 @@ const Illuminati = () => {
           <br />
           <br />
           <div style={{ width: "fit-content", margin: "auto" }}>
-            <NeonButton>Watch The Theme Video</NeonButton>
+            <NeonButton href='https://www.youtube.com/watch?v=ng-6OGP3l5s'>Watch The Theme Video</NeonButton>
           </div>
         </div>
       </div>
-      <div className="illuminati-events-wrapper">
+      <div className="illuminati-events-wrapper ill-background">
         <div className="illuminati-events">
           <h2>Events of 2021</h2>
           <IlluminatiList />

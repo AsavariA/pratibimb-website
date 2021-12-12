@@ -11,7 +11,7 @@
   margin: auto;
 }
 
-.card-pratibimb-event .event-content {
+.card-pratibimb-event .pratibimb-event-content {
   text-align: center;
   -webkit-transform: translateY(-150px);
           transform: translateY(-150px);
@@ -20,28 +20,28 @@
   transition: all;
 }
 
-.card-pratibimb-event .event-content p {
+.card-pratibimb-event .pratibimb-event-content p {
   font-size: 13px;
   color: black;
   font-weight: 300;
   line-height: 1.5rem;
 }
 
-.card-pratibimb-event .event-content h2 {
+.card-pratibimb-event .pratibimb-event-content h2 {
   letter-spacing: normal !important;
-  font-size: 10px;
+  font-size: 14px;
   font-weight: bold;
   text-align: center;
-  color: blue;
+  color: red;
   margin-top: 0.5rem;
   font-family: "Readex Pro", sans-serif !important;
 }
 
-.card-pratibimb-event:hover {
+.card-illuminati:hover {
   height: 350px;
 }
 
-.card-pratibimb-event:hover .content {
+.card-illuminati:hover .content {
   -webkit-transform: translateY(-105px);
           transform: translateY(-105px);
 }
@@ -61,7 +61,5 @@
   border-radius: 10px;
   -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 /*# sourceMappingURL=event-card.css.map */
