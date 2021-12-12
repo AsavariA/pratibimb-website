@@ -280,7 +280,7 @@
       grid-template-rows: 1fr 1fr;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
-      grid-template-areas: "big-top big-top big-top small-top small-top" "small-middle small-middle big-middle big-middle big-middle";
+      grid-template-areas: "big-top big-top big-top small-top small-top" "small-middle small-middle big-middle big-middle big-middle";
 }
 
 .block {
@@ -1303,14 +1303,15 @@ p {
 
 .card-illuminati {
   position: relative;
-  width: 350px;
-  height: 200px;
-  border-radius: 0px 5px 20px rgba(0, 0, 0, 0.5);
+  max-width: 300px;
+  height: 230px;
+  border-radius: 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  padding: 20px 50px;
-  background-color: #fff;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.75);
   cursor: pointer;
+  margin: auto;
 }
 
 .card-illuminati .content {
@@ -1323,22 +1324,29 @@ p {
 }
 
 .card-illuminati .content p {
-  font-size: 10px;
-  color: maroon;
+  font-size: 13px;
+  color: black;
   font-weight: 300;
+  line-height: 1.5rem;
 }
 
 .card-illuminati .content h2 {
-  letter-spacing: 3px;
-  font-family: "Playfair Display", serif;
-  font-size: 15px;
+  letter-spacing: normal !important;
+  font-size: 14px;
   font-weight: bold;
   text-align: center;
   color: red;
+  margin-top: 0.5rem;
+  font-family: "Readex Pro", sans-serif !important;
 }
 
 .card-illuminati:hover {
-  height: 300px;
+  height: 350px;
+}
+
+.card-illuminati:hover .content {
+  -webkit-transform: translateY(-105px);
+          transform: translateY(-105px);
 }
 
 .imgbox {

@@ -29,7 +29,7 @@ const images2019 = importAll(
 
 const imagesHallOfFame = importAll(
   require.context(
-    "../assets/prs/hallOfFame",
+    "../assets/prs/halloffame",
     false,
     /\.(png|jpg|JPG|jpe?g|svg|webp|jfif)$/
   )

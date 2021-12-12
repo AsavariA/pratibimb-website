@@ -1,17 +1,17 @@
 import * as React from "react";
-import Card from "@mui/material/Card";
-import CardHeader from "@mui/material/CardHeader";
-import CardMedia from "@mui/material/CardMedia";
-import CardContent from "@mui/material/CardContent";
+// import Card from "@mui/material/Card";
+// import CardHeader from "@mui/material/CardHeader";
+// import CardMedia from "@mui/material/CardMedia";
+// import CardContent from "@mui/material/CardContent";
 
-import { makeStyles } from "@mui/styles";
+// import { makeStyles } from "@mui/styles";
 
-const useCardStyles = makeStyles({
-  root: {
-    background: "#191919",
-    opacity:'0.92'
-  },
-});
+// const useCardStyles = makeStyles({
+//   root: {
+//     background: "#191919",
+//     opacity:'0.92'
+//   },
+// });
 
 // const IlluminatiCard = ({ name, poster, results }) => {
 //   const classes = useCardStyles();
@@ -37,7 +37,7 @@ const IlluminatiCard = ({name, poster, results}) => {
   return(
     <div className="card-illuminati">
       <div className="imgbox">
-        <img src={poster}/>
+        <img src={poster} alt=''/>
       </div>
       <div className="content">
         <p>{`1st Place - ${results[0]}`}</p>

@@ -10,16 +10,18 @@ const IlluminatiList = () => {
   const justify = useMediaQuery("(min-width:700px)");
 
   return (
-    <div>
+    <div style={{margin: '6rem 0 2rem 0'}}>
       <Grid container spacing={5} justifyContent={justify ? "start" : "center"}>
         {illuminati_events.map((il, index) => {
           return (
-            <Grid item xs={12} sm={6} md={6} lg={4}>
+            <Grid item xs={12} sm={6} md={6} lg={4} key={index}>
               <IlluminatiCard className="illuminati-card-main"
                 name={il.name}
                 poster={il.poster}
                 results={il.results}
               />
+              <br />
+              <br />
             </Grid>
           );
         })}

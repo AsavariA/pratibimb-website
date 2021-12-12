@@ -66,7 +66,7 @@ const Footer = () => {
               <Link href="About" underline="none" color="inherit">
                 <p>About</p>
               </Link>
-              <Link href="/hallOfFame" underline="none" color="inherit" >
+              <Link href="/halloffame" underline="none" color="inherit" >
                 <p>Hall of Fame</p>
               </Link>
             </div>
