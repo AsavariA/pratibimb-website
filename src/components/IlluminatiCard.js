@@ -37,7 +37,7 @@ const IlluminatiCard = ({name, poster, results}) => {
   return(
     <div className="card-illuminati">
       <div className="imgbox">
-        <img src={poster} alt=''/>
+        <img src={poster} alt='' loading="lazy"/>
       </div>
       <div className="content">
         <p>{`1st Place - ${results[0]}`}</p>

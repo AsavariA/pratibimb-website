@@ -68,7 +68,7 @@ const Navbar = () => {
     <div className="nav-wrapper">
       <Box display="flex" flexDirection="row" alignItems="center">
         <Link href="/" underline="none" color="inherit">
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" loading="lazy" />
         </Link>
       </Box>
 

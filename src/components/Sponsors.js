@@ -36,9 +36,9 @@ const SponsContent = () => {
         <br />
         <br />
         {vert ? (
-          <img src={sponsgrid1} alt="" width="100%" height="auto"></img>
+          <img src={sponsgrid1} alt="" width="100%" height="auto" loading='lazy'></img>
         ) : (
-          <img src={sponsgrid2} alt="" width="100%" height="auto"></img>
+          <img src={sponsgrid2} alt="" width="100%" height="auto" loading="lazy"></img>
         )}
       </div>
     </>

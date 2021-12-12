@@ -43,18 +43,6 @@ function shuffle(array) {
 imageNames = shuffle(imageNames);
 
 export default function Gallery() {
-  const [state, setState] = React.useState("-1");
-
-  // const opacityStyle = {
-  //   position: "absolute",
-  //   top: "0",
-  //   left: "0",
-  //   height: "100vh",
-  //   width: "99vw",
-  //   zIndex: `${state}`,
-  //   backgroundColor: "#000000bf",
-  // };
-
   return (
     <div className="gallery">
       <HeroCommon
@@ -79,12 +67,9 @@ export default function Gallery() {
                   <div>
                     <img
                       className="card img-responsive"
+                      loading="lazy"
                       src={images[i_name]["default"]}
                       alt="Pratibimb"
-                      // onMouseOver={opaq}
-                      // onMouseDown={normal}
-                      onMouseEnter={() => setState("9")}
-                      onMouseLeave={() => setState("-1")}
                       key={key}
                     ></img>
                   </div>

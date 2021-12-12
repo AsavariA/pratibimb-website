@@ -6,6 +6,7 @@ import {
   faTwitter,
   faInstagram,
   faLinkedin,
+  faYoutube
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
@@ -46,6 +47,14 @@ const Footer = () => {
                   </a>
                 </Box>
                 <Box>
+                  <a href="https://www.youtube.com/user/PratibimbVJTI">
+                    <FontAwesomeIcon
+                      className="social-link"
+                      icon={faYoutube}
+                    />
+                  </a>
+                </Box>
+                <Box>
                   <a href="https://www.linkedin.com/company/pratibimb-vjti/mycompany/">
                     <FontAwesomeIcon
                       className="social-link"
@@ -63,7 +72,7 @@ const Footer = () => {
               <Link href="/" underline="none" color="inherit">
                 <p>Home</p>
               </Link>
-              <Link href="About" underline="none" color="inherit">
+              <Link href="about" underline="none" color="inherit">
                 <p>About</p>
               </Link>
               <Link href="/halloffame" underline="none" color="inherit" >
@@ -78,13 +87,13 @@ const Footer = () => {
               <Link href="/illuminati" underline="none" color="inherit">
                 <p>Illuminati</p>
               </Link>
-              <Link href="/Sponsors" underline="none" color="inherit">
+              <Link href="/sponsors" underline="none" color="inherit">
                 <p>Sponsors</p>
               </Link>
-              <Link href="/Events" underline="none" color="inherit">
+              <Link href="/events" underline="none" color="inherit">
                 <p>Events</p>
               </Link>
-              <Link href="Gallery" underline="none" color="inherit">
+              <Link href="gallery" underline="none" color="inherit">
                 <p>Gallery</p>
               </Link>
             </div>
