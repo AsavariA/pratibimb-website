@@ -19,7 +19,7 @@
     padding: 2rem;
   }
   .illuminati-theme h2 {
-    font-size: 30px;
+    font-size: 35px;
   }
 }
 
@@ -61,12 +61,9 @@
     padding: 1rem 0;
   }
   .illuminati-events-wrapper .illuminati-events h2 {
-    font-size: 30px;
+    font-size: 35px;
     margin-bottom: 1rem;
+    text-align: center;
   }
-}
-
-.illuminati-events-wrapper .pa {
-  background: url(../assets/prati_events_bg1.jpg);
 }
 /*# sourceMappingURL=illuminati-events.css.map */

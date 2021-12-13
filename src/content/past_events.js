@@ -22,32 +22,23 @@ export const past_events = [
   {
     name: "T-Launch",
     image: tee_launch,
-    desc: "All branches flaunt their branch T's"
+    desc: "All branches flaunt their branch T's",
   },
   {
-    name: "Treasure Hunt",
-    image: treasure_hunt,
-    desc : "Hello",
+    name: "Concerts",
+    image: concerts,
   },
   {
-    name: "Band Wars",
-    image: band_event,
+    name: "Group Dance",
+    image: grp_dance,
   },
   {
-    name: "EDM Night",
-    image: edm_night,
+    name: "Mumbai's got Talent",
+    image: mumbai_talent,
   },
   {
-    name: "Trad Show",
-    image: trad_show,
-  },
-  {
-    name: "Duet Dance",
-    image: duetdance2,
-  },
-  {
-    name: "Beat Boxing",
-    image: beatbox,
+    name: "Sand Art",
+    image: sand_art,
   },
   {
     name: "Singing",
@@ -66,39 +57,47 @@ export const past_events = [
     image: talk_show,
   },
   {
-    name: "Rap Battle",
-    image: rap_battle,
-  },
-  {
     name: "Salsa Workshop",
     image: salsa_ws,
   },
   {
-    name: "Sand Art",
-    image: sand_art,
+    name: "Trad Show",
+    image: trad_show,
   },
   {
-    name: "Mumbai's got Talent",
-    image: mumbai_talent,
+    name: "Treasure Hunt",
+    image: treasure_hunt,
+    desc: "Hello",
   },
-  {//
+  {
+    name: "Band Wars",
+    image: band_event,
+  },
+  {
+    name: "EDM Night",
+    image: edm_night,
+  },
+  {
+    name: "Duet Dance",
+    image: duetdance2,
+  },
+  {
+    name: "Beat Boxing",
+    image: beatbox,
+  },
+  {
+    name: "Rap Battle",
+    image: rap_battle,
+  },
+  {
     name: "Garba Night",
     image: garba_night,
-  },
-  {
-    name: "Group Dance",
-    image: grp_dance,
   },
   {
     name: "Beach Cleaning Drive",
     image: beach_cleaning,
   },
-  {
-    name: "Concerts",
-    image: concerts,
-  },
-
 ];
 
-export default past_events;//
+export default past_events; //
 //

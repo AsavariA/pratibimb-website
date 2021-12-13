@@ -5,28 +5,32 @@ import past_events from "../content/past_events";
 import current_events from "../content/current_events";
 import CommonCard from "./CommonCard";
 import useMediaQuery from "@mui/material/useMediaQuery";
-// import IlluminatiCard from "./IlluminatiCard";
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+import ImageListItemBar from '@mui/material/ImageListItemBar';
 
-// const EventListPast = () => {
-//   const justify = useMediaQuery("(min-width:700px)");
-//   return (
-//     <div>
-//       <Grid container spacing={5} justifyContent={justify ? "start" : "center"}>
-//         {past_events.map((il, index) => {
-//           return (
-//             <Grid item xs={12} sm={6} md={6} lg={4} key={index}>
-//               <EventCard
-//                 name={il.name}
-//                 image={il.image}
-//                 desc={il.desc}
-//               />
-//             </Grid>
-//           );
-//         })}
-//       </Grid>
-//     </div>
-//   );
-// };//
+const EventListPast = () => {
+  const justify1 = useMediaQuery("(min-width:1000px)");
+  const justify2 = useMediaQuery("(min-width:600px)");
+
+  return (
+    <ImageList sx={{ width: '100%' }} cols={justify2 ? justify1 ? 6 : 4 : 2} gap={10}>
+      {past_events.map((item) => (
+        <ImageListItem key={item.name}>
+          <img
+            src={`${item.image}?w=248&fit=crop&auto=format`}
+            srcSet={`${item.image}?w=248&fit=crop&auto=format&dpr=2 2x`}
+            alt={item.name}
+            loading="lazy"
+          />
+          <ImageListItemBar
+            title={item.name}
+          />
+        </ImageListItem>
+      )).reverse()}
+    </ImageList>
+  );
+}
 
 const EventListCurrent = () => {
   const justify = useMediaQuery("(min-width:700px)");
@@ -53,7 +57,6 @@ const EventListCurrent = () => {
 }; //
 
 const Events = () => {
-  const justify = useMediaQuery("(min-width:700px)");
   return (
     <div>
       <HeroCommon
@@ -98,19 +101,12 @@ const Events = () => {
         </div>
       </div>
 
-      {/* <div className="pratibimb-events-wrapper">
-        <div className="pratibimb-events">
-          <h2>Events of 2021</h2> */}
-
-      {/* </div>
-      </div> */}
-
-      {/* <div className="pratibimb-events-wrapper">
-        <div className="pratibimb-events">
-          <h2>Events of 2019</h2>
+      <div className="illuminati-events-wrapper" style={{background: 'linear-gradient(180deg, rgba(35,31,42,1) 0%, rgba(145,130,172,1) 100%)'}}>
+        <div className="illuminati-events">
+          <h2>Past Events</h2>
           <EventListPast />
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };

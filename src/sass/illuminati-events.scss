@@ -16,7 +16,7 @@
   @media only screen and (max-width: 900px) {
     padding: 2rem;
     h2 {
-      font-size: 30px;
+      font-size: 35px;
     }
   }
 }
@@ -58,13 +58,10 @@
     .illuminati-events {
       padding: 1rem 0;
       h2 {
-        font-size: 30px;
+        font-size: 35px;
         margin-bottom: 1rem;
+        text-align: center;
       }
     }
   }
-}
-
-.illuminati-events-wrapper .pa {
-  background: url(../assets/prati_events_bg1.jpg);
 }
