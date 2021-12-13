@@ -69,25 +69,18 @@ const Events = () => {
           <h2>PERFORMING ARTS</h2>
           <br />
           <p>
-            The theme of this year's Illuminati is 'Through a Pixelated Glass.'
-            This idea brings to life the plethora of games and cartoons we all
-            enjoyed as kids. Be it the light-hearted cartoon 'Popeye the Sailor'
-            or the soul-crushing anime 'Your Lie in April', these brilliant
-            pieces of art are bound to take us on a magic carpet ride into the
-            world of pixels and animation.
+          The goal of art is Expression. It is the journey of the free soul. It is the escapist fantasy to live as well as the grim reality to be felt.
+For every talented bone and every whisper of creativity, PratibimbVJTI is a cocooning hub and the best platform to showcase your zing and panache.
+
           </p>
           <p>
-            Speaking of pixels, one never fails to see the tremendous evolution
-            of games from the classics like 'Pacman' to the modern-day
-            'Valorant'!
+          The Performance Arts Sector include all the events ranging from Drama, Dance, Vocals, Poetry to Instrumentals, Raps and Beatboxing, Artwork and Social-work. 
+          These events not only add fun to your life but also help build your personality as a whole.
           </p>
           <p>
-            It is amazing to live in an era where cartoons and games have not
-            lost their charm and are still enjoyed by people all around the
-            world. This year's topic for Illuminati aims to delve deeper into
-            this fantasy world and step into the shoes of the thousands of
-            characters it encompasses. So join us on this adventure as we step
-            into yet another year of Pratibimb and Illuminati.
+          Pratibimb also brings you the opportunity to interact with immensely talented peers from other colleges too, which in itself would be a great experience! 
+          When so many passionate and fierce people get together, it really is a sight to behold. 
+          So join us on this beautiful and enthralling ride full of fun and captivating experiences.
           </p>
           <br />
           <br />
