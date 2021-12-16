@@ -18,21 +18,21 @@ const About = () => {
         }}
       >
         <div className="vjti">
-          <h2>About VJTI</h2>
-          <p>
+          <h2 data-aos="fade-up">About VJTI</h2>
+          <p data-aos="fade-up">
             <b>Veermata Jijabai Technological Institute</b> is an engineering
             college located in Matunga, Mumbai, and is one of the oldest
             engineering colleges in Asia. It was founded in 1887, then known as
             the Victoria Jubilee Technological Institute.
           </p>
           <br />
-          <p>
+          <p data-aos="fade-up">
             <b>Vision</b>: To establish global leadership in the field of
             technology and develop competent human resources for providing
             service to society.
           </p>
           <br />
-          <p>
+          <p data-aos="fade-up">
             <b>Mission</b>: <br />- To provide students with a comprehensive
             knowledge of principles of engineering with a multi-disciplinary
             approach that is challenging.
@@ -43,14 +43,14 @@ const About = () => {
             national international development.
           </p>
           <br />
-          <p>
+          <p data-aos="fade-up">
             <b>Notable Alumni</b>: Sekhar Basu, Chaggan Bhujbal, Dr.Vijay
             Gupchup, Dr. Anil Kakodkar, Jayant Patil, among others.
           </p>
         </div>
         <div className="prati-about">
-          <h2>About Pratibimb</h2>
-          <Grid container spacing={5} alignItems="center">
+          <h2 data-aos="fade-up">About Pratibimb</h2>
+          <Grid container spacing={5} alignItems="center" data-aos="fade-up">
             <Grid item xs={12} sm={12} md={5}>
               <iframe
                 width="100%"

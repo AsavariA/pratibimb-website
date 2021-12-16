@@ -10,7 +10,7 @@ import CHAITRAVI_CHALKE from "../assets/Team/CHAITRAVI_CHALKE.webp";
 
 export default function WebDevTeam() {
   return (
-    <Box sx={{ maxWidth: "1300px", margin: "0 auto" }}>
+    <Box sx={{ maxWidth: "1300px", margin: "0 auto" }} data-aos="fade-up">
       <Grid container spacing={2} alignItems="center" justifyContent="center">
         <Grid item md>
           <MemberCard

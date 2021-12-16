@@ -12,7 +12,7 @@ const SponsList = () => {
     <Grid container spacing={2} justifyContent='center'>
       {sponsors.map((sp) => {
         return (
-          <Grid item xs={12} sm={6} md={6} lg={3}>
+          <Grid item data-aos="fade-up" xs={12} sm={6} md={6} lg={3}>
             <SponsItem
               name={sp.name}
               image={sp.logo}
@@ -31,7 +31,7 @@ const SponsContent = () => {
   return (
     <>
       <div className="past-spons">
-        <h2>PAST SPONSORS</h2>
+        <h2 data-aos="fade-up">PAST SPONSORS</h2>
         <SponsList />
         <br />
         <br />
@@ -42,6 +42,7 @@ const SponsContent = () => {
             width="100%"
             height="auto"
             loading="lazy"
+            data-aos="fade-up"
           ></img>
         ) : (
           <img
@@ -50,6 +51,7 @@ const SponsContent = () => {
             width="100%"
             height="auto"
             loading="lazy"
+            data-aos="fade-up"
           ></img>
         )}
       </div>

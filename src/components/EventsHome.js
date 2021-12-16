@@ -9,8 +9,8 @@ const EventsHome = () => {
   return (
     <div className="events-home">
       <div className="content">
-        <h2>EVENTS</h2>
-        <div>
+        <h2 data-aos="fade-up">EVENTS</h2>
+        <div data-aos="fade-up">
           {past_events ? (
             <Carousel>
               {past_events.slice(0, 12).map((e, key) => {
@@ -23,7 +23,9 @@ const EventsHome = () => {
             </Carousel>
           ) : null}
         </div>
-        <NeonButton href="/events">See All Events</NeonButton>
+        <div data-aos="fade-up"> 
+          <NeonButton href="/events">See All Events</NeonButton>
+        </div>
         <br />
       </div>
     </div>

@@ -8,27 +8,27 @@ const Team = () => {
   return (
     <div>
       <div className="team">
-        <h2>THE TORCHBEARERS</h2>
+        <h2 data-aos="fade-up">THE TORCHBEARERS</h2>
         <div className="team-sec1">
-          <h3>The Big Three</h3>
+          <h3 data-aos="fade-up">The Big Three</h3>
           <Team1 />
         </div>
         <br />
         <br />
         <div className="team-sec1">
-          <h3>The Pillars</h3>
+          <h3 data-aos="fade-up">The Pillars</h3>
           <Team2 />
         </div>
         <br />
         <br />
         <div className="team-sec1">
-          <h3>The Right Brain</h3>
+          <h3 data-aos="fade-up">The Right Brain</h3>
           <Team3 />
         </div>
       </div>
       <div className="web-dev">
         <div className="team-sec1">
-          <h3>The Web Dev Team</h3>
+          <h3 data-aos="fade-up">The Web Dev Team</h3>
           <br />
           <WebDevTeam />
         </div>

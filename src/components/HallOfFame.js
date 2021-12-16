@@ -60,16 +60,16 @@ const HallOfFame = () => {
       ></HeroCommon>
       <div className="hall-of-fame">
         <div className="glimpses">
-          <h2>Glimpses of 2020</h2>
+          <h2 data-aos="fade-up">Glimpses of 2020</h2>
           <Grid
             container
             spacing={2}
             alignItems="center"
-            justifyContent="space-between"
+            justifyContent="space-evenly"
           >
             {imageNames2020.map((x) => {
               return (
-                <Grid item key={x} md>
+                <Grid item key={x} md data-aos="fade-up">
                   <CelebCircle
                     img={images2020[x]["default"]}
                     name={x.split(".")[0].replace(/_/g, " ")}
@@ -81,16 +81,16 @@ const HallOfFame = () => {
         </div>
 
         <div className="glimpses">
-          <h2>Glimpses of 2019</h2>
+          <h2 data-aos="fade-up">Glimpses of 2019</h2>
           <Grid
             container
             spacing={2}
             alignItems="center"
-            justifyContent="space-between"
+            justifyContent="space-evenly"
           >
             {imageNames2019.map((x) => {
               return (
-                <Grid item key={x} md>
+                <Grid item key={x} md data-aos="fade-up">
                   <CelebCircle
                     img={images2019[x]["default"]}
                     name={x.split(".")[0].replace(/_/g, " ")}
@@ -101,16 +101,16 @@ const HallOfFame = () => {
           </Grid>
         </div>
         <div className="glimpses">
-          <h2>Hall Of Fame</h2>
+          <h2 data-aos="fade-up">Hall Of Fame</h2>
           <Grid
             container
             spacing={2}
             alignItems="center"
-            justifyContent="space-between"
+            justifyContent="space-evenly"
           >
             {imagesNameHallOfFame.map((x) => {
               return (
-                <Grid item key={x} md>
+                <Grid item key={x} md data-aos="fade-up">
                   <CelebCircle
                     img={imagesHallOfFame[x]["default"]}
                     name={x.split(".")[0].replace(/_/g, " ")}

@@ -62,7 +62,7 @@ export default function Team1() {
   };
 
   return (
-    <Box sx={{ maxWidth: "1000px", margin: "0 auto" }}>
+    <Box sx={{ maxWidth: "1000px", margin: "0 auto" }} data-aos="fade-up">
       <Tabs
         classes={{ root: classes.root, scroller: classes.scroller }}
         value={value}

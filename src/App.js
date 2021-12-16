@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import "./sass/index.css";
 import "./index.css";
 import { BrowserRouter as Router, useRoutes } from "react-router-dom";
@@ -13,6 +14,8 @@ import HallOfFame from "./components/HallOfFame";
 import About from "./components/About";
 import Illuminati from "./components/Illuminati";
 import Events from "./components/Events";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const theme = createTheme({
   palette: {
@@ -45,7 +48,7 @@ const App = () => {
     { path: "/halloffame", element: <HallOfFame /> },
     { path: "/gallery", element: <Gallery /> },
     { path: "/about", element: <About /> },
-    { path: "/illuminati", element: <Illuminati />},
+    { path: "/illuminati", element: <Illuminati /> },
     { path: "/events", element: <Events /> },
     // ...
   ]);
@@ -53,6 +56,12 @@ const App = () => {
 };
 
 const AppWrapper = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+    });
+  }, []);
+
   return (
     <Router>
       <ThemeProvider theme={theme}>

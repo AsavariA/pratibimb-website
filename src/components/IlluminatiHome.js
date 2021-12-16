@@ -6,10 +6,10 @@ const IlluminatiHome = () => {
   return (
     <div className="illuminati-home">
       <div className="content">
-        <h2>ILLUMINATI</h2>
+        <h2 data-aos="fade-up">ILLUMINATI</h2>
         <div className="illuminati-home-embed">
           <Grid container spacing={5}>
-            <Grid item xs={12} sm={12} md={6}>
+            <Grid item xs={12} sm={12} md={6} data-aos="fade-up">
               <iframe
                 width="100%"
                 height="400"
@@ -22,11 +22,11 @@ const IlluminatiHome = () => {
             </Grid>
             <Grid item xs={12} sm={12} md={6}>
               <div>
-                <p style={{ fontSize: "20px" }}>
+                <p style={{ fontSize: "20px" }} data-aos="fade-up">
                   Illuminati, The Battle of Branches
                 </p>
                 <br />
-                <p>
+                <p data-aos="fade-up">
                   Illuminati is the inter branch competition at Pratibimb VJTI.
                   All the branches engage in a fierce battle against each other
                   via tasks alloted to them during the course of the year. These
@@ -41,7 +41,7 @@ const IlluminatiHome = () => {
                   is Illuminati.
                 </p>
                 <br />
-                <div className="neon-ill">
+                <div className="neon-ill" data-aos="fade-up">
                   <NeonButton href="/illuminati">Delve Deeper!</NeonButton>
                 </div>
               </div>
