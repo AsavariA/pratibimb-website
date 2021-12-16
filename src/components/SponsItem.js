@@ -7,7 +7,7 @@ const SponsItem = (props) => {
         <a href={props.link} target="_blank" rel="noreferrer">
           <img
             src={props.image}
-            style={{ height: "auto", width: "100%" }}
+            style={{ height: "160px", width: "300px", objectFit: 'contain' }}
             alt=".."
           />
           <div class="overlay">

@@ -118,8 +118,8 @@
   background-position: center;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  -webkit-transition: radial;
-  transition: radial;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
 }
 
 #b1 {
@@ -204,12 +204,14 @@
   }
 }
 
-.team {
+.team,
+.web-dev {
   background-color: #000;
   padding: 3rem;
 }
 
-.team h2 {
+.team h2,
+.web-dev h2 {
   letter-spacing: 3px;
   font-family: "Playfair Display", serif;
   font-size: 60px;
@@ -220,7 +222,8 @@
   padding: 0 1rem;
 }
 
-.team .team-sec1 h3 {
+.team .team-sec1 h3,
+.web-dev .team-sec1 h3 {
   font-family: "Playfair Display", serif;
   font-size: 40px;
   font-weight: lighter;
@@ -230,18 +233,25 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .team {
+  .team,
+  .web-dev {
     padding: 0.5rem;
   }
-  .team h2 {
+  .team h2,
+  .web-dev h2 {
     font-size: 30px;
     line-height: 40px;
     padding: 2rem 1rem 0 1rem;
   }
-  .team .team-sec1 h3 {
+  .team .team-sec1 h3,
+  .web-dev .team-sec1 h3 {
     font-size: 25px;
     margin-top: 1rem;
   }
+}
+
+.web-dev {
+  background-color: #200831;
 }
 
 .member-card {
@@ -266,6 +276,10 @@
   margin: 0.5rem auto;
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
+}
+
+.member-card a {
+  color: #fff;
 }
 
 .member-card img {
@@ -325,13 +339,20 @@
   background: linear-gradient(0deg, #c1ffad 0%, #77b376 100%);
 }
 
+.orange:hover {
+  background: #ad6e08;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ad6e08), to(#e0a500));
+  background: linear-gradient(180deg, #ad6e08 0%, #e0a500 100%);
+}
+
 .member-card:hover {
   -webkit-transform: translate(0, -10px);
           transform: translate(0, -10px);
 }
 
 .member-card:hover b,
-.member-card:hover p {
+.member-card:hover p,
+.member-card:hover a {
   color: #000;
 }
 

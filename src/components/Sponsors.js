@@ -9,10 +9,10 @@ import { Grid } from "@mui/material";
 
 const SponsList = () => {
   return (
-    <Grid container spacing={2}>
+    <Grid container spacing={2} justifyContent='center'>
       {sponsors.map((sp) => {
         return (
-          <Grid item xs={6} sm={6} md={3}>
+          <Grid item xs={12} sm={6} md={6} lg={3}>
             <SponsItem
               name={sp.name}
               image={sp.logo}
@@ -36,9 +36,21 @@ const SponsContent = () => {
         <br />
         <br />
         {vert ? (
-          <img src={sponsgrid1} alt="" width="100%" height="auto" loading='lazy'></img>
+          <img
+            src={sponsgrid1}
+            alt=""
+            width="100%"
+            height="auto"
+            loading="lazy"
+          ></img>
         ) : (
-          <img src={sponsgrid2} alt="" width="100%" height="auto" loading="lazy"></img>
+          <img
+            src={sponsgrid2}
+            alt=""
+            width="100%"
+            height="auto"
+            loading="lazy"
+          ></img>
         )}
       </div>
     </>

@@ -1,4 +1,7 @@
 import spykar from "../assets/sponsors/spykar.png";
+import dominos from "../assets/sponsors/Dominos.jpg";
+import unionbank from "../assets/sponsors/Unionbank.jpg";
+import subway from "../assets/sponsors/subway.png";
 
 const sponsors = [
   {
@@ -7,35 +10,20 @@ const sponsors = [
     link: "https://www.spykar.com/",
   },
   {
-    name: "Spykar",
-    logo: spykar,
-    link: "https://www.spykar.com/",
+    name: "Dominos",
+    logo: dominos,
+    link: "https://pizzaonline.dominos.co.in/",
   },
   {
-    name: "Spykar",
-    logo: spykar,
-    link: "https://www.spykar.com/",
+    name: "Union Bank",
+    logo: unionbank,
+    link: "https://www.unionbankofindia.co.in/",
   },
   {
-    name: "Spykar",
-    logo: spykar,
-    link: "https://www.spykar.com/",
+    name: "Subway",
+    logo: subway,
+    link: "https://www.subway.com/en-IN",
   },
-  //   {
-  //     name: "",
-  //     logo: "",
-  //     link: "",
-  //   },
-  //   {
-  //     name: "",
-  //     logo: "",
-  //     link: "",
-  //   },
-  //   {
-  //     name: "",
-  //     logo: "",
-  //     link: "",
-  //   },
 ];
 
 export default sponsors;

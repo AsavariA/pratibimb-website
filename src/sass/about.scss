@@ -112,7 +112,7 @@
   background-position: center;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  transition: radial;
+  transition: 0.5s ease-in;
 }
 
 #b1 {
@@ -177,7 +177,8 @@
   }
 }
 
-.team {
+.team,
+.web-dev {
   background-color: #000;
   padding: 3rem;
 
@@ -218,6 +219,10 @@
   }
 }
 
+.web-dev {
+  background-color: #200831;
+}
+
 .member-card {
   height: 300px;
   width: 250px;
@@ -229,6 +234,10 @@
   align-items: center;
   padding: 1rem;
   margin: 0.5rem auto;
+
+  a {
+    color: #fff;
+  }
 
   img {
     height: 180px;
@@ -292,10 +301,20 @@
   );
 }
 
+.orange:hover {
+  background: rgb(173, 110, 8);
+  background: linear-gradient(
+    180deg,
+    rgba(173, 110, 8, 1) 0%,
+    rgba(224, 165, 0, 1) 100%
+  );
+}
+
 .member-card:hover {
   transform: translate(0, -10px);
   b,
-  p {
+  p,
+  a {
     color: #000;
   }
   img {

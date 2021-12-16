@@ -27,18 +27,18 @@ const IlluminatiHome = () => {
                 </p>
                 <br />
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat.
+                  Illuminati is the inter branch competition at Pratibimb VJTI.
+                  All the branches engage in a fierce battle against each other
+                  via tasks alloted to them during the course of the year. These
+                  tasks span over a variety of genres. Right from art and craft
+                  to singing, dancing, drama, quizes and many many more. All the
+                  students zealously participate in all these events to bag
+                  points for their branch and the branch with the most points at
+                  the end of the 4 day cultural festival wins the prestigious
+                  Illuminati Cup. This years theme for Illuminati is 'Through a
+                  Pixelated Glass.' To know more about it, join us on this crazy,
+                  fun and exciting journey and explore this magical world which
+                  is Illuminati.
                 </p>
                 <br />
                 <div className="neon-ill">
