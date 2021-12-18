@@ -1,5 +1,9 @@
 @import "./variables.scss";
 
+.img-loading {
+  background-image: url("../assets/loading.gif");
+}
+
 .gallery {
   background-color: black;
 }

@@ -1,0 +1,19 @@
+@import "./variables.scss";
+
+body {
+  text-align: center;
+  background-color: rgb(2, 6, 44);
+
+  .load-div {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loader {
+    height: inherit;
+    margin: 0 auto;
+  }
+}

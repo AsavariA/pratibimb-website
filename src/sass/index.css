@@ -280,7 +280,7 @@
       grid-template-rows: 1fr 1fr;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
-      grid-template-areas: "big-top big-top big-top small-top small-top" "small-middle small-middle big-middle big-middle big-middle";
+      grid-template-areas: "big-top big-top big-top small-top small-top" "small-middle small-middle big-middle big-middle big-middle";
 }
 
 .block {
@@ -1266,6 +1266,10 @@ p {
   }
 }
 
+.img-loading {
+  background-image: url("../assets/loading.gif");
+}
+
 .gallery {
   background-color: black;
 }
@@ -1485,5 +1489,29 @@ p {
   border-radius: 10px;
   -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  text-align: center;
+  background-color: #02062c;
+}
+
+body .load-div {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .loader {
+  height: inherit;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=index.css.map */

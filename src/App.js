@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./sass/index.css";
 import "./index.css";
 import { BrowserRouter as Router, useRoutes } from "react-router-dom";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import BounceLoader from "react-spinners/BounceLoader";
 import AboutUsHome from "./components/AboutUsHome";
 import IlluminatiHome from "./components/IlluminatiHome";
 import Footer from "./components/Footer";
@@ -56,6 +57,15 @@ const App = () => {
 };
 
 const AppWrapper = () => {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, Math.random() * 5000);
+  }, []);
+
   useEffect(() => {
     AOS.init({
       duration: 500,
@@ -64,10 +74,21 @@ const AppWrapper = () => {
 
   return (
     <Router>
-      <ThemeProvider theme={theme}>
-        <App />
-        <Footer />
-      </ThemeProvider>
+      {loading ? (
+        <div className="load-div">
+          <BounceLoader
+            className="loader"
+            color={"#1256A4"}
+            loading={loading}
+            size={60}
+          />
+        </div>
+      ) : (
+        <ThemeProvider theme={theme}>
+          <App />
+          <Footer />
+        </ThemeProvider>
+      )}
     </Router>
   );
 };
