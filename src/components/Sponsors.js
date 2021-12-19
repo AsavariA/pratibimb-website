@@ -2,14 +2,14 @@ import React from "react";
 import HeroCommon from "./HeroCommon";
 import SponsItem from "./SponsItem";
 import sponsors from "../content/sponsors";
-import sponsgrid1 from "../assets/sponsors/spons-grid.webp";
-import sponsgrid2 from "../assets/sponsors/spons-grid-vert.webp";
+import sponsgrid1 from "../assets/spons-grid.webp";
+import sponsgrid2 from "../assets/spons-grid-vert.webp";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { Grid } from "@mui/material";
 
 const SponsList = () => {
   return (
-    <Grid container spacing={2} justifyContent='center'>
+    <Grid container spacing={2} justifyContent="center">
       {sponsors.map((sp) => {
         return (
           <Grid item data-aos="fade-up" xs={12} sm={6} md={6} lg={3}>
