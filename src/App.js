@@ -28,17 +28,39 @@ const theme = createTheme({
 });
 
 const Home = () => {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
   return (
-    <div className="App">
-      <HeroCommon
-        title="PRATIBIMB VJTI"
-        subtitle="THE CULTURAL EXTRAVAGANZA OF VJTI, MUMBAI"
-        imgClass="hero-home"
-      />
-      <AboutUsHome />
-      <IlluminatiHome />
-      <EventsHome />
-    </div>
+    <>
+      {loading ? (
+        <div className="load-div">
+          <BounceLoader
+            className="loader"
+            color={"#1256A4"}
+            loading={loading}
+            size={60}
+          />
+        </div>
+      ) : (
+        <div className="App">
+          <HeroCommon
+            title="PRATIBIMB VJTI"
+            subtitle="THE CULTURAL EXTRAVAGANZA OF VJTI, MUMBAI"
+            imgClass="hero-home"
+          />
+          <AboutUsHome />
+          <IlluminatiHome />
+          <EventsHome />
+        </div>
+      )}
+    </>
   );
 };
 
@@ -57,15 +79,6 @@ const App = () => {
 };
 
 const AppWrapper = () => {
-  const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, Math.random() * 5000);
-  }, []);
-
   useEffect(() => {
     AOS.init({
       duration: 500,
@@ -74,23 +87,11 @@ const AppWrapper = () => {
 
   return (
     <Router>
-      {loading ? (
-        <div className="load-div">
-          <BounceLoader
-            className="loader"
-            color={"#1256A4"}
-            loading={loading}
-            size={60}
-          />
-        </div>
-      ) : (
-        <ThemeProvider theme={theme}>
-          <App />
-          <Footer />
-        </ThemeProvider>
-      )}
+      <ThemeProvider theme={theme}>
+        <App />
+        <Footer />
+      </ThemeProvider>
     </Router>
   );
 };
-
 export default AppWrapper;
