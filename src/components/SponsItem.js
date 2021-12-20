@@ -3,11 +3,20 @@ import React from "react";
 const SponsItem = (props) => {
   return (
     <div className="spons-item">
-      <div className="item clean">
+      <div
+        className="item clean"
+        style={{
+          backgroundColor: "black",
+        }}
+      >
         {/* <a href={props.link} target="_blank" rel="noreferrer"> */}
         <img
           src={props.image}
-          style={{ height: "160px", width: "300px", objectFit: "contain" }}
+          style={{
+            height: "160px",
+            width: "300px",
+            objectFit: "contain",
+          }}
           alt=".."
         />
         <div className="overlay">
