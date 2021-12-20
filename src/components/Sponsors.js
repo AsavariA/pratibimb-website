@@ -10,9 +10,9 @@ import { Grid } from "@mui/material";
 const SponsList = () => {
   return (
     <Grid container spacing={2} justifyContent="center">
-      {sponsors.map((sp) => {
+      {sponsors.map((sp, a) => {
         return (
-          <Grid item data-aos="fade-up" xs={12} sm={6} md={6} lg={3}>
+          <Grid item data-aos="fade-up" xs={12} sm={6} md={6} lg={3} key={a}>
             <SponsItem
               name={sp.name}
               image={sp.logo}
