@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import "./sass/index.css";
 import "./index.css";
 import { BrowserRouter as Router, useRoutes } from "react-router-dom";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import BounceLoader from "react-spinners/BounceLoader";
+// import BounceLoader from "react-spinners/BounceLoader";
 import AboutUsHome from "./components/AboutUsHome";
 import IlluminatiHome from "./components/IlluminatiHome";
 import Footer from "./components/Footer";
@@ -28,18 +28,18 @@ const theme = createTheme({
 });
 
 const Home = () => {
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-  }, []);
+  // useEffect(() => {
+  //   setLoading(true);
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 2000);
+  // }, []);
 
   return (
     <>
-      {loading ? (
+      {/* {loading ? (
         <div className="load-div">
           <BounceLoader
             className="loader"
@@ -48,7 +48,7 @@ const Home = () => {
             size={60}
           />
         </div>
-      ) : (
+      ) : ( */}
         <div className="App">
           <HeroCommon
             title="PRATIBIMB VJTI"
@@ -59,7 +59,7 @@ const Home = () => {
           <IlluminatiHome />
           <EventsHome />
         </div>
-      )}
+      {/* )} */}
     </>
   );
 };

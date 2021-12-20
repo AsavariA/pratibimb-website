@@ -26,7 +26,64 @@
         width: 100%;
         height: 100%;
         z-index: 9999;
-        background: center no-repeat #fff;
+        background: center no-repeat rgb(0, 0, 0);
+      }
+
+      .loader-container {
+        margin: 0;
+        height: 100vh;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+      }
+
+      .lightgreen,
+      .darkgreen {
+        margin: auto;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+
+      .lightgreen {
+        z-index: 999;
+        background-color: rgba(171, 39, 232, 0.3);
+        animation: hide1 2s ease infinite;
+      }
+
+      .darkgreen {
+        background-color: rgba(155, 11, 199, 0.4);
+        animation: hide2 2s ease infinite;
+      }
+
+      @keyframes hide1 {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(0);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      @keyframes hide2 {
+        0% {
+          transform: scale(0);
+        }
+        50% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(0);
+        }
       }
     </style>
     <script
@@ -41,7 +98,12 @@
     </script>
   </head>
   <body>
-    <div class="se-pre-con"></div>
+    <div class="se-pre-con">
+      <div class="loader-container">
+        <div class="lightgreen"></div>
+        <div class="darkgreen"></div>
+      </div>
+    </div>
     <div id="root"></div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>

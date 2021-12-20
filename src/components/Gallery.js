@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import HeroCommon from "./HeroCommon";
 import { Grid } from "@mui/material";
-import BounceLoader from "react-spinners/BounceLoader";
+// import BounceLoader from "react-spinners/BounceLoader";
 
 function importAll(r) {
   let images = {};
@@ -44,18 +44,18 @@ function shuffle(array) {
 imageNames = shuffle(imageNames);
 
 export default function Gallery() {
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 5000);
-  }, []);
+  // useEffect(() => {
+  //   setLoading(true);
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 5000);
+  // }, []);
 
   return (
     <>
-      {loading ? (
+      {/* {loading ? (
         <div className="load-div">
           <BounceLoader
             className="loader"
@@ -64,7 +64,7 @@ export default function Gallery() {
             size={60}
           />
         </div>
-      ) : (
+      ) : ( */}
         <div className="gallery">
           <HeroCommon
             imgClass="hero-gallery"
@@ -101,7 +101,7 @@ export default function Gallery() {
             </Grid>
           </div>
         </div>
-      )}
+      {/* )} */}
     </>
   );
 }
