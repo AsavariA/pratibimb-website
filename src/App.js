@@ -3,7 +3,6 @@ import "./sass/index.css";
 import "./index.css";
 import { BrowserRouter as Router, useRoutes } from "react-router-dom";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-// import BounceLoader from "react-spinners/BounceLoader";
 import AboutUsHome from "./components/AboutUsHome";
 import IlluminatiHome from "./components/IlluminatiHome";
 import Footer from "./components/Footer";
@@ -28,38 +27,18 @@ const theme = createTheme({
 });
 
 const Home = () => {
-  // const [loading, setLoading] = useState(false);
-
-  // useEffect(() => {
-  //   setLoading(true);
-  //   setTimeout(() => {
-  //     setLoading(false);
-  //   }, 2000);
-  // }, []);
-
   return (
     <>
-      {/* {loading ? (
-        <div className="load-div">
-          <BounceLoader
-            className="loader"
-            color={"#1256A4"}
-            loading={loading}
-            size={60}
-          />
-        </div>
-      ) : ( */}
-        <div className="App">
-          <HeroCommon
-            title="PRATIBIMB VJTI"
-            subtitle="THE CULTURAL EXTRAVAGANZA OF VJTI, MUMBAI"
-            imgClass="hero-home"
-          />
-          <AboutUsHome />
-          <IlluminatiHome />
-          <EventsHome />
-        </div>
-      {/* )} */}
+      <div className="App">
+        <HeroCommon
+          title="PRATIBIMB VJTI"
+          subtitle="THE CULTURAL EXTRAVAGANZA OF VJTI, MUMBAI"
+          imgClass="hero-home"
+        />
+        <AboutUsHome />
+        <IlluminatiHome />
+        <EventsHome />
+      </div>
     </>
   );
 };
