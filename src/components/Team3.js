@@ -15,6 +15,9 @@ import SAKHSI_SHIRUDE from "../assets/Team/SAKSHI_SHIRUDE.webp";
 import BHUVAN_SARDA from "../assets/Team/BHUVAN_SARDA.webp";
 import VEDANTI_KSHIRSAGAR from "../assets/Team/VEDANTI_KSHIRSAGAR.webp";
 import PRIYANKA_AVHAD from "../assets/Team/PRIYANKA_AVHAD.jpeg";
+import ASAVARI_AMBAVANE from "../assets/Team/ASAVARI_AMBAVANE.webp";
+import SAMEEP_SHERKAR from "../assets/Team/SAMEEP_SHERKAR.webp";
+import SURYAJEET_BHOSALE from "../assets/Team/SURYAJEET_BHOSALE.webp";
 
 const useTabStyles = makeStyles({
   root: {
@@ -73,7 +76,8 @@ export default function Team3() {
       >
         <Tab label="Design" {...a11yProps(0)} />
         <Tab label="Performing Arts" {...a11yProps(1)} />
-        <Tab label="Fine Arts" {...a11yProps(2)} />
+        <Tab label="Illuminati Co-ordinators" {...a11yProps(2)} />
+        <Tab label="Fine Arts" {...a11yProps(3)} />
       </Tabs>
       <SwipeableViews
         axis={theme.direction === "rtl" ? "x-reverse" : "x"}
@@ -139,6 +143,39 @@ export default function Team3() {
           </Grid>
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
+          <Grid
+            container
+            spacing={2}
+            alignItems="center"
+            justifyContent="center"
+          >
+            <Grid item md>
+              <MemberCard
+                img={SAMEEP_SHERKAR}
+                post="Illuminati Co-ordinator"
+                name="Sameep Sherkar"
+                color="blue"
+              />
+            </Grid>
+            <Grid item md>
+              <MemberCard
+                img={ASAVARI_AMBAVANE}
+                post="Illuminati Co-ordinator"
+                name="Asavari Ambavane"
+                color="blue"
+              />
+            </Grid>
+            <Grid item md>
+              <MemberCard
+                img={SURYAJEET_BHOSALE}
+                post="Illuminati Co-ordinator"
+                name="Suryajeet Bhosale"
+                color="blue"
+              />
+            </Grid>
+          </Grid>
+        </TabPanel>
+        <TabPanel value={value} index={3} dir={theme.direction}>
           <Grid
             container
             spacing={2}

@@ -73,8 +73,8 @@ export default function Team1() {
         scrollButtons={true}
       >
         <Tab label="Secretaries" {...a11yProps(0)} />
-        <Tab label="Illuminati Co-ordinators" {...a11yProps(1)} />
-        <Tab label="Treasurer" {...a11yProps(2)} />
+        {/* <Tab label="Illuminati Co-ordinators" {...a11yProps(1)} /> */}
+        <Tab label="Treasurer" {...a11yProps(1)} />
       </Tabs>
       <SwipeableViews
         axis={theme.direction === "rtl" ? "x-reverse" : "x"}
@@ -114,7 +114,7 @@ export default function Team1() {
             </Grid>
           </Grid>
         </TabPanel>
-        <TabPanel value={value} index={1} dir={theme.direction}>
+        {/* <TabPanel value={value} index={1} dir={theme.direction}>
           <Grid
             container
             spacing={2}
@@ -146,8 +146,8 @@ export default function Team1() {
               />
             </Grid>
           </Grid>
-        </TabPanel>
-        <TabPanel value={value} index={2} dir={theme.direction}>
+        </TabPanel> */}
+        <TabPanel value={value} index={1} dir={theme.direction}>
           <Grid
             container
             spacing={2}

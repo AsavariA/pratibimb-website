@@ -10,7 +10,7 @@ const Team = () => {
       <div className="team">
         <h2 data-aos="fade-up">THE TORCHBEARERS</h2>
         <div className="team-sec1">
-          <h3 data-aos="fade-up">The Big Three</h3>
+          <h3 data-aos="fade-up">The Big Four</h3>
           <Team1 />
         </div>
         <br />
