@@ -36,9 +36,9 @@ const IlluminatiHome = () => {
                   points for their branch and the branch with the most points at
                   the end of the 4 day cultural festival wins the prestigious
                   Illuminati Cup. This years theme for Illuminati is 'Through a
-                  Pixelated Glass.' To know more about it, join us on this crazy,
-                  fun and exciting journey and explore this magical world which
-                  is Illuminati.
+                  Pixelated Glass.' To know more about it, join us on this
+                  crazy, fun and exciting journey and explore this magical world
+                  which is Illuminati.
                 </p>
                 <br />
                 <div className="neon-ill" data-aos="fade-up">

@@ -6,7 +6,7 @@ import {
   faTwitter,
   faInstagram,
   faLinkedin,
-  faYoutube
+  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
@@ -26,7 +26,11 @@ const Footer = () => {
                 maxWidth="300px"
               >
                 <Box>
-                  <a href="https://www.instagram.com/pratibimbvjti/" target="_blank" rel="noreferrer">
+                  <a
+                    href="https://www.instagram.com/pratibimbvjti/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <FontAwesomeIcon
                       className="social-link"
                       icon={faInstagram}
@@ -34,12 +38,20 @@ const Footer = () => {
                   </a>
                 </Box>
                 <Box>
-                  <a href="https://twitter.com/pratibimbvjti" target="_blank" rel="noreferrer">
+                  <a
+                    href="https://twitter.com/pratibimbvjti"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <FontAwesomeIcon className="social-link" icon={faTwitter} />
                   </a>
                 </Box>
                 <Box>
-                  <a href="https://www.facebook.com/pratibimbvjti/" target="_blank" rel="noreferrer">
+                  <a
+                    href="https://www.facebook.com/pratibimbvjti/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <FontAwesomeIcon
                       className="social-link"
                       icon={faFacebook}
@@ -47,15 +59,20 @@ const Footer = () => {
                   </a>
                 </Box>
                 <Box>
-                  <a href="https://www.youtube.com/user/PratibimbVJTI" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon
-                      className="social-link"
-                      icon={faYoutube}
-                    />
+                  <a
+                    href="https://www.youtube.com/user/PratibimbVJTI"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <FontAwesomeIcon className="social-link" icon={faYoutube} />
                   </a>
                 </Box>
                 <Box>
-                  <a href="https://www.linkedin.com/company/pratibimb-vjti/mycompany/" target="_blank" rel="noreferrer">
+                  <a
+                    href="https://www.linkedin.com/company/pratibimb-vjti/mycompany/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <FontAwesomeIcon
                       className="social-link"
                       icon={faLinkedin}
@@ -75,7 +92,7 @@ const Footer = () => {
               <Link href="about" underline="none" color="inherit">
                 <p>About</p>
               </Link>
-              <Link href="/halloffame" underline="none" color="inherit" >
+              <Link href="/halloffame" underline="none" color="inherit">
                 <p>Hall of Fame</p>
               </Link>
             </div>

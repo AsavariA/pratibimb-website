@@ -1,21 +1,4 @@
 .card-illuminati {
-  background-color: rgba(255, 255, 255, 0.75);
-}
-
-.card-illuminati h3 {
-  color: #fc271e;
-}
-
-.card-pa {
-  background-color: rgba(0, 0, 0, 0.75);
-}
-
-.card-pa h3 {
-  color: #ffe6a2;
-}
-
-.card-illuminati,
-.card-pa {
   position: relative;
   max-width: 300px;
   height: 230px;
@@ -23,14 +6,12 @@
   -webkit-transition: 0.3s;
   transition: 0.3s;
   padding: 20px;
+  background-color: rgba(255, 255, 255, 0.75);
   cursor: pointer;
   margin: auto;
 }
 
-.card-illuminati .content-illuminati,
-.card-illuminati .content-pa,
-.card-pa .content-illuminati,
-.card-pa .content-pa {
+.card-illuminati .content {
   text-align: center;
   -webkit-transform: translateY(-150px);
   transform: translateY(-150px);
@@ -39,24 +20,19 @@
   transition: all;
 }
 
-.card-illuminati .content-illuminati p,
-.card-illuminati .content-pa p,
-.card-pa .content-illuminati p,
-.card-pa .content-pa p {
+.card-illuminati .content p {
   font-size: 13px;
   color: black;
   font-weight: 300;
   line-height: 1.5rem;
 }
 
-.card-illuminati .content-illuminati h3,
-.card-illuminati .content-pa h3,
-.card-pa .content-illuminati h3,
-.card-pa .content-pa h3 {
+.card-illuminati .content h2 {
   letter-spacing: normal !important;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
+  color: red;
   margin-top: 0.5rem;
   font-family: "Readex Pro", sans-serif !important;
 }
@@ -65,18 +41,9 @@
   height: 350px;
 }
 
-.card-illuminati:hover .content-illuminati {
+.card-illuminati:hover .content {
   -webkit-transform: translateY(-105px);
   transform: translateY(-105px);
-}
-
-.card-pa:hover {
-  height: 250px;
-}
-
-.card-pa:hover .content-pa {
-  -webkit-transform: translateY(-18px);
-  transform: translateY(-18px);
 }
 
 .imgbox {
@@ -95,4 +62,4 @@
   -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
 }
-/*# sourceMappingURL=common-card.css.map */
+/*# sourceMappingURL=illuminati-card.css.map */

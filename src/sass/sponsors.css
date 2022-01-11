@@ -53,7 +53,7 @@
 
 .spons-item .item:hover {
   -webkit-box-shadow: 5px 5px 10px #ce0a5c;
-          box-shadow: 5px 5px 10px #ce0a5c;
+  box-shadow: 5px 5px 10px #ce0a5c;
 }
 
 .spons-item .clean .overlay span:nth-child(1) {
@@ -63,7 +63,7 @@
   font-size: 80px;
   font-weight: bold;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .spons-item .clean .overlay span:nth-child(2) {
@@ -72,7 +72,7 @@
   left: 50%;
   font-size: 25px;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   text-align: center;
   color: #000;
   font-weight: 800;
@@ -92,38 +92,38 @@
 
 .spons-item .clean .overlay:hover span:nth-child(1) {
   -webkit-animation: slide 0.4s;
-          animation: slide 0.4s;
+  animation: slide 0.4s;
 }
 
 .spons-item .clean .overlay:hover span:nth-child(2) {
   -webkit-animation: slide 0.7s;
-          animation: slide 0.7s;
+  animation: slide 0.7s;
 }
 
 .spons-item .clean .overlay:hover span:nth-child(3) {
   -webkit-animation: line 0.5s forwards;
-          animation: line 0.5s forwards;
+  animation: line 0.5s forwards;
 }
 
 @-webkit-keyframes slide {
   0% {
     -webkit-transform: translateX(-10%);
-            transform: translateX(-10%);
+    transform: translateX(-10%);
   }
   100% {
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 }
 
 @keyframes slide {
   0% {
     -webkit-transform: translateX(-10%);
-            transform: translateX(-10%);
+    transform: translateX(-10%);
   }
   100% {
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 }
 
@@ -152,7 +152,7 @@
   font-size: 0px;
   font-weight: bold;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   opacity: 0;
 }
 
@@ -162,9 +162,9 @@
   left: 50%;
   font-size: 40px;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   opacity: 0;
   text-align: center;
   color: #000;
@@ -193,28 +193,28 @@
 
 .spons-item .uncover .overlay:hover span:nth-child(1) {
   -webkit-animation: fadein 0.6s forwards;
-          animation: fadein 0.6s forwards;
+  animation: fadein 0.6s forwards;
   -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 .spons-item .uncover .overlay:hover span:nth-child(2) {
   -webkit-animation: fadein 0.6s forwards;
-          animation: fadein 0.6s forwards;
+  animation: fadein 0.6s forwards;
   -webkit-animation-delay: 0.75s;
-          animation-delay: 0.75s;
+  animation-delay: 0.75s;
 }
 
 .spons-item .uncover .overlay:hover span:nth-child(3) {
   -webkit-animation: draw-left 0.7s;
-          animation: draw-left 0.7s;
+  animation: draw-left 0.7s;
 }
 
 .spons-item .uncover .overlay:hover span:nth-child(4) {
   -webkit-animation: draw-right 0.7s;
-          animation: draw-right 0.7s;
+  animation: draw-right 0.7s;
   -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 
 @-webkit-keyframes draw-left {

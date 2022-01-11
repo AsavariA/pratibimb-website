@@ -23,7 +23,7 @@ const EventsHome = () => {
             </Carousel>
           ) : null}
         </div>
-        <div data-aos="fade-up"> 
+        <div data-aos="fade-up">
           <NeonButton href="/events">See All Events</NeonButton>
         </div>
         <br />

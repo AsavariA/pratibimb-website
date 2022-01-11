@@ -20,21 +20,13 @@ const MemberCard = ({ color, img, name, post, type, link, git }) => {
           mt={1}
         >
           <Box>
-            <a
-              href={link}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon icon={faLinkedinIn} className="prof-link"/>
+            <a href={link} target="_blank" rel="noreferrer">
+              <FontAwesomeIcon icon={faLinkedinIn} className="prof-link" />
             </a>
           </Box>
           <Box ml={2}></Box>
           <Box>
-            <a
-              href={git}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={git} target="_blank" rel="noreferrer">
               <FontAwesomeIcon className="prof-link" icon={faGithub} />
             </a>
           </Box>

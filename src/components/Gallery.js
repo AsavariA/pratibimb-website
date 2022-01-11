@@ -45,42 +45,36 @@ imageNames = shuffle(imageNames);
 export default function Gallery() {
   return (
     <>
-        <div className="gallery">
-          <HeroCommon
-            imgClass="hero-gallery"
-            title="GALLERY"
-            subtitle="ALL THE BEST MOMENTS, CAPTURED"
-          ></HeroCommon>
-          <div className="wrapper">
-            <div></div>
-            <br />
-            <Grid container spacing={2} style={{ maxWidth: "inherit" }}>
-              <Grid
-                item
-                xs={9}
-                sm={9}
-                md={9}
-                style={{ maxWidth: "inherit", margin: "auto" }}
-              >
-                <div id="gallery">
-                  {imageNames.map((i_name, key) => {
-                    return (
-                      <div>
-                        <img
-                          className="card img-responsive"
-                          loading="lazy"
-                          src={images[i_name]["default"]}
-                          alt="Pratibimb"
-                          key={key}
-                        ></img>
-                      </div>
-                    );
-                  })}
-                </div>
-              </Grid>
+      <div className="gallery">
+        <HeroCommon
+          imgClass="hero-gallery"
+          title="GALLERY"
+          subtitle="ALL THE BEST MOMENTS, CAPTURED"
+        ></HeroCommon>
+        <div className="wrapper">
+          <div></div>
+          <br />
+          <Grid container spacing={2} style={{ padding: "0rem 1rem" }}>
+            <Grid item md style={{ maxWidth: "1200px", margin: "auto" }}>
+              <div id="gallery">
+                {imageNames.map((i_name, key) => {
+                  return (
+                    <div key={key}>
+                      <img
+                        className="card img-responsive"
+                        loading="lazy"
+                        src={images[i_name]["default"]}
+                        alt="Pratibimb"
+                        key={key}
+                      ></img>
+                    </div>
+                  );
+                })}
+              </div>
             </Grid>
-          </div>
+          </Grid>
         </div>
+      </div>
     </>
   );
 }

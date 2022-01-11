@@ -9,7 +9,9 @@ const AboutUsHome = () => {
         <Grid item xs={12} sm={12} md={6}>
           <div className="content">
             <h2 data-aos="fade-up">ABOUT US</h2>
-            <p style={{ fontSize: "20px" }} data-aos="fade-up">Pratibimb means Reflection</p>
+            <p style={{ fontSize: "20px" }} data-aos="fade-up">
+              Pratibimb means Reflection
+            </p>
             <br />
             <p data-aos="fade-up">
               A reflection of pulsating energy, infectious enthusiasm,
@@ -38,7 +40,10 @@ const AboutUsHome = () => {
           </div>
         </Grid>
       </Grid>
-      <div style={{ margin: "auto", marginTop: "3rem", width: "fit-content" }} data-aos="fade-up">
+      <div
+        style={{ margin: "auto", marginTop: "3rem", width: "fit-content" }}
+        data-aos="fade-up"
+      >
         <NeonButton href="/about">Know More!</NeonButton>
       </div>
     </div>

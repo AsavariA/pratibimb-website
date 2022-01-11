@@ -80,11 +80,18 @@ const Navbar = () => {
       ) : (
         <>
           <IconButton aria-label="close" onClick={toggleDrawer(true)}>
-            <MenuIcon fontSize="large" />
+            <MenuIcon fontSize="large" style={{ fill: "#fff" }} />
           </IconButton>
           <Drawer anchor="right" open={navopen} onClose={toggleDrawer(false)}>
-            <IconButton aria-label="close" onClick={toggleDrawer(false)}>
-              <ArrowForwardIosIcon fontSize="large" />
+            <IconButton
+              aria-label="close"
+              onClick={toggleDrawer(false)}
+              style={{ width: "fit-content" }}
+            >
+              <ArrowForwardIosIcon
+                fontSize="large"
+                style={{ fill: "#e9e9e9", justifyContent: "left" }}
+              />
             </IconButton>
             <Navlinks fd="column" />
           </Drawer>
