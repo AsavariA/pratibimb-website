@@ -22,7 +22,7 @@ const Team = () => {
         <br />
         <br />
         <div className="team-sec1">
-          <h3 data-aos="fade-up">The Right Brain</h3>
+          <h3 data-aos="fade-up">The Creatives</h3>
           <Team3 />
         </div>
       </div>
