@@ -6,15 +6,16 @@ const SponsItem = (props) => {
       <div
         className="item clean"
         style={{
-          backgroundColor: "black",
+          height: "160px",
+          width: "300px",
         }}
       >
         {/* <a href={props.link} target="_blank" rel="noreferrer"> */}
         <img
           src={props.image}
           style={{
-            height: "160px",
-            width: "300px",
+            height: "100%",
+            width: "100%",
             objectFit: "contain",
           }}
           alt=".."
