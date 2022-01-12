@@ -12,9 +12,6 @@ import { makeStyles } from "@mui/styles";
 import MITI_SHAH from "../assets/Team/MITI_SHAH.webp";
 import MEHAK_SATI from "../assets/Team/MEHAK_SATI.webp";
 import YASH_SINHA from "../assets/Team/YASH_SINHA.webp";
-import ASAVARI_AMBAVANE from "../assets/Team/ASAVARI_AMBAVANE.webp";
-import SAMEEP_SHERKAR from "../assets/Team/SAMEEP_SHERKAR.webp";
-import SURYAJEET_BHOSALE from "../assets/Team/SURYAJEET_BHOSALE.webp";
 import CHINMAY_CHOPDA from "../assets/Team/CHINMAY_CHOPDA.webp";
 
 const useTabStyles = makeStyles({
@@ -73,7 +70,6 @@ export default function Team1() {
         scrollButtons={true}
       >
         <Tab label="Secretaries" {...a11yProps(0)} />
-        {/* <Tab label="Illuminati Co-ordinators" {...a11yProps(1)} /> */}
         <Tab label="Treasurer" {...a11yProps(1)} />
       </Tabs>
       <SwipeableViews
@@ -114,39 +110,6 @@ export default function Team1() {
             </Grid>
           </Grid>
         </TabPanel>
-        {/* <TabPanel value={value} index={1} dir={theme.direction}>
-          <Grid
-            container
-            spacing={2}
-            alignItems="center"
-            justifyContent="center"
-          >
-            <Grid item md>
-              <MemberCard
-                img={SAMEEP_SHERKAR}
-                post="Illuminati Co-ordinator"
-                name="Sameep Sherkar"
-                color="blue"
-              />
-            </Grid>
-            <Grid item md>
-              <MemberCard
-                img={ASAVARI_AMBAVANE}
-                post="Illuminati Co-ordinator"
-                name="Asavari Ambavane"
-                color="blue"
-              />
-            </Grid>
-            <Grid item md>
-              <MemberCard
-                img={SURYAJEET_BHOSALE}
-                post="Illuminati Co-ordinator"
-                name="Suryajeet Bhosale"
-                color="blue"
-              />
-            </Grid>
-          </Grid>
-        </TabPanel> */}
         <TabPanel value={value} index={1} dir={theme.direction}>
           <Grid
             container
