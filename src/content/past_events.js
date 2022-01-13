@@ -53,7 +53,7 @@ export const past_events = [
     image: station_painting,
   },
   {
-    name: "Talk Show",
+    name: "Synergy",
     image: talk_show,
   },
   {
@@ -74,7 +74,7 @@ export const past_events = [
     image: band_event,
   },
   {
-    name: "EDM Night",
+    name: "Sunburn EDM Night",
     image: edm_night,
   },
   {
