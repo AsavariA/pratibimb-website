@@ -14,7 +14,7 @@
 .card-illuminati .content {
   text-align: center;
   -webkit-transform: translateY(-150px);
-  transform: translateY(-150px);
+          transform: translateY(-150px);
   opacity: 1;
   -webkit-transition: all;
   transition: all;
@@ -43,7 +43,7 @@
 
 .card-illuminati:hover .content {
   -webkit-transform: translateY(-105px);
-  transform: translateY(-105px);
+          transform: translateY(-105px);
 }
 
 .imgbox {
@@ -51,7 +51,7 @@
   width: 100%;
   height: 100%;
   -webkit-transform: translateY(-100px);
-  transform: translateY(-100px);
+          transform: translateY(-100px);
   z-index: 99;
   padding-top: 30px;
 }
@@ -60,6 +60,6 @@
   width: 100%;
   border-radius: 10px;
   -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
 }
 /*# sourceMappingURL=illuminati-card.css.map */

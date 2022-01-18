@@ -4,11 +4,11 @@
   display: flex;
   padding: 2rem 3rem;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 1000;
   color: #e9e9e9;
 }
@@ -16,9 +16,9 @@
 .nav-wrapper img {
   height: 80px;
   -webkit-animation: none;
-  animation: none;
+          animation: none;
   -webkit-filter: hue-rotate(0deg);
-  filter: hue-rotate(0deg);
+          filter: hue-rotate(0deg);
 }
 
 .nav-wrapper h1 {

@@ -16,6 +16,7 @@ import Illuminati from "./components/Illuminati";
 import Events from "./components/Events";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import UpcomingEvents from "./components/UpcomingEvents";
 
 const theme = createTheme({
   palette: {
@@ -38,6 +39,7 @@ const Home = () => {
         <AboutUsHome />
         <IlluminatiHome />
         <EventsHome />
+        <UpcomingEvents />
       </div>
     </>
   );
