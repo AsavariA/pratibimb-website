@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Grid } from "@mui/material";
 import HeroCommon from "./HeroCommon";
-import illuminati_events from "../content/illuminati_events";
 import CommonCard from "./CommonCard";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import NeonButton from "./NeonButton";
+import fire from "../fire";
+import { collection, getDocs } from "firebase/firestore/lite";
 
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
@@ -17,10 +18,25 @@ import it5 from "../assets/it5.webp";
 const IlluminatiList = () => {
   const justify = useMediaQuery("(min-width:700px)");
 
+  const [info, setInfo] = useState([]);
+
+  async function getEvents(db) {
+    const events_col = collection(db, "Illuminati_Events");
+    const events_snapshot = await getDocs(events_col);
+    const events_list = events_snapshot.docs.map((doc) => doc.data());
+    setInfo(events_list);
+  }
+
+  useEffect(() => {
+    getEvents(fire);
+    console.log(info)
+    // eslint-disable-next-line
+  }, []);
+
   return (
     <div style={{ margin: "6rem 0 2rem 0" }}>
       <Grid container spacing={5} justifyContent={justify ? "start" : "center"}>
-        {illuminati_events.map((il, index) => {
+        {info.map((il, index) => {
           return (
             <Grid
               item
@@ -33,8 +49,8 @@ const IlluminatiList = () => {
             >
               <CommonCard
                 name={il.name}
-                image={il.image}
-                results={il.results}
+                image={il.poster}
+                results={il.result}
                 type="ill"
               />
               <br />
@@ -96,7 +112,7 @@ const Illuminati = () => {
       </div>
       <div className="illuminati-events-wrapper ill-background">
         <div className="illuminati-events">
-          <h2 data-aos="fade-up">Events of 2021</h2>
+          <h2 data-aos="fade-up">Events of 2021-2022</h2>
           <IlluminatiList />
         </div>
       </div>
