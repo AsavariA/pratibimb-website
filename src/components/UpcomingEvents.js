@@ -26,7 +26,7 @@ const UpcomingEvents = () => {
     "Jun",
     "Jul",
     "Aug",
-    "Sept",
+    "Sep",
     "Oct",
     "Nov",
     "Dec",
@@ -34,7 +34,7 @@ const UpcomingEvents = () => {
 
   return (
     <div className="upcoming-events-table">
-      <h1>Upcomimg Events</h1>
+      <h1>Upcoming Events</h1>
       <table className="events-list">
         <tbody>
           {info
