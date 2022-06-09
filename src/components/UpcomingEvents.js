@@ -35,10 +35,12 @@ const UpcomingEvents = () => {
   return (
     <div className="upcoming-events-table">
       <h1>Upcoming Events</h1>
-      <table className="events-list">
-        <tbody>
-          {info
-            .map((x) => {
+      {info.length == 0 ? (
+        <p style={{textAlign: "center"}}>- No Upcoming Events -</p>
+      ) : (
+        <table className="events-list">
+          <tbody>
+            {info.map((x) => {
               return (
                 <tr key={x.name}>
                   <td>
@@ -68,8 +70,9 @@ const UpcomingEvents = () => {
                 </tr>
               );
             })}
-        </tbody>
-      </table>
+          </tbody>
+        </table>
+      )}
     </div>
   );
 };

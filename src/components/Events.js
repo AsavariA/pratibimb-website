@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import HeroCommon from "./HeroCommon";
 import { Grid } from "@mui/material";
-import past_events from "../content/past_events";
 import current_events from "../content/current_events";
-import CommonCard from "./CommonCard";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
+import fire from "../fire";
+import { collection, getDocs } from "firebase/firestore/lite";
 
 const EventListPast = () => {
   const justify1 = useMediaQuery("(min-width:1000px)");
@@ -20,7 +20,7 @@ const EventListPast = () => {
       gap={10}
       data-aos="fade-up"
     >
-      {past_events
+      {current_events
         .map((item) => (
           <ImageListItem key={item.name}>
             <img
@@ -39,26 +39,33 @@ const EventListPast = () => {
 
 const EventListCurrent = () => {
   const justify = useMediaQuery("(min-width:700px)");
+  const [info, setInfo] = useState([]);
+
+  async function getEvents(db) {
+    const events_col = collection(db, "PA_Events");
+    const events_snapshot = await getDocs(events_col);
+    const events_list = events_snapshot.docs.map((doc) => doc.data());
+    console.log(events_list);
+    setInfo(events_list[0].links);
+  }
+
+  useEffect(() => {
+    getEvents(fire);
+    // eslint-disable-next-line
+  }, []);
   return (
     <div style={{ margin: "6rem 0 2rem 0" }}>
-      <Grid container spacing={5} justifyContent={justify ? "start" : "center"}>
-        {current_events.map((il, index) => {
+      <Grid container spacing={5} justifyContent={justify ? "start" : "center"} data-aos="fade-up">
+        {info.map((il, index) => {
           return (
             <Grid
               item
               xs={12}
               sm={6}
-              md={6}
-              lg={4}
+              md={3}
               key={index}
-              data-aos="fade-up"
             >
-              <CommonCard
-                name={il.name}
-                image={il.image}
-                desc={il.desc}
-                type="pa"
-              />
+              <img style={{height: '100%', width: '100%'}} src={il} alt=""></img>
               <br />
               <br />
             </Grid>
@@ -110,7 +117,7 @@ const Events = () => {
       <div className="illuminati-events-wrapper pa-background">
         <div className="illuminati-events">
           <h2 style={{ color: "black" }} data-aos="fade-up">
-            Events of 2021
+            PA Events 2022
           </h2>
           <EventListCurrent />
         </div>
@@ -124,7 +131,7 @@ const Events = () => {
         }}
       >
         <div className="illuminati-events">
-          <h2 data-aos="fade-up">Past Events</h2>
+          <h2 data-aos="fade-up">Other Events</h2>
           <EventListPast />
         </div>
       </div>
