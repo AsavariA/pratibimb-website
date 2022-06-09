@@ -35,7 +35,7 @@ const UpcomingEvents = () => {
   return (
     <div className="upcoming-events-table">
       <h1>Upcoming Events</h1>
-      {info.length == 0 ? (
+      {info.length === 0 ? (
         <p style={{textAlign: "center"}}>- No Upcoming Events -</p>
       ) : (
         <table className="events-list">

@@ -641,6 +641,8 @@
   border-radius: 5px;
   -webkit-transition: 0.5s ease-in;
   transition: 0.5s ease-in;
+  width: 100%;
+  height: auto;
 }
 
 .past-winners img:hover {
