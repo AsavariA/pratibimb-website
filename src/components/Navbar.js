@@ -13,38 +13,47 @@ const Navbar = () => {
       <div className="nav-links">
         <Box display="flex" flexDirection={fd} justifyContent="flex-end">
           <Box p={3}>
+          <Box p={2}>
             <Link underline="none" href="/" color="inherit">
               <p>Home</p>
             </Link>
           </Box>
           <Box p={3}>
+          <Box p={2}>
             <Link underline="none" href="/about" color="inherit">
               <p>About</p>
             </Link>
           </Box>
           <Box p={3}>
+          <Box p={2}>
             <Link underline="none" href="/events" color="inherit">
               <p>Events</p>
             </Link>
           </Box>
-          <Box p={3}>
+          <Box p={2}>
             <Link underline="none" href="/illuminati" color="inherit">
               <p>Illuminati</p>
             </Link>
           </Box>
-          <Box p={3}>
+          <Box p={2}>
             <Link underline="none" href="/sponsors" color="inherit">
               <p>Sponsors</p>
             </Link>
           </Box>
-          <Box p={3}>
+          <Box p={2}>
             <Link underline="none" href="/halloffame" color="inherit">
               <p>Hall of Fame</p>
             </Link>
           </Box>
           <Box p={3}>
+          <Box p={2}>
             <Link underline="none" href="/gallery" color="inherit">
               <p>Gallery</p>
+            </Link>
+          </Box>
+          <Box p={2}>
+            <Link underline="none" href="/merch" color="inherit">
+              <p>Merch</p>
             </Link>
           </Box>
         </Box>

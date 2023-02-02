@@ -14,6 +14,7 @@ import HallOfFame from "./components/HallOfFame";
 import About from "./components/About";
 import Illuminati from "./components/Illuminati";
 import Events from "./components/Events";
+import Merch from "./components/Merch";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import UpcomingEvents from "./components/UpcomingEvents";
@@ -54,6 +55,7 @@ const App = () => {
     { path: "/about", element: <About /> },
     { path: "/illuminati", element: <Illuminati /> },
     { path: "/events", element: <Events /> },
+    { path: "/merch", element: <Merch />}
     // ...
   ]);
   return routes;

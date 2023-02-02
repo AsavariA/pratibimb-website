@@ -94,6 +94,10 @@
   background-image: url(../assets/illuminati-hero.webp);
 }
 
+.hero-starrynight{
+  background-image: url(../assets/starrynight.jpg);
+}
+
 .main-text {
   height: 70vh;
   display: -webkit-box;
