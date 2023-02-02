@@ -2,6 +2,8 @@
   "name": "pratibimb-website",
   "homepage": "http://pratibimbvjti.in/",
   "version": "0.1.0",
+  "homepage": "http://pratibimbvjti.com/",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.7.0",
