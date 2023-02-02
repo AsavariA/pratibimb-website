@@ -12,19 +12,16 @@ const Navbar = () => {
     return (
       <div className="nav-links">
         <Box display="flex" flexDirection={fd} justifyContent="flex-end">
-          <Box p={3}>
           <Box p={2}>
             <Link underline="none" href="/" color="inherit">
               <p>Home</p>
             </Link>
           </Box>
-          <Box p={3}>
           <Box p={2}>
             <Link underline="none" href="/about" color="inherit">
               <p>About</p>
             </Link>
           </Box>
-          <Box p={3}>
           <Box p={2}>
             <Link underline="none" href="/events" color="inherit">
               <p>Events</p>
@@ -45,7 +42,6 @@ const Navbar = () => {
               <p>Hall of Fame</p>
             </Link>
           </Box>
-          <Box p={3}>
           <Box p={2}>
             <Link underline="none" href="/gallery" color="inherit">
               <p>Gallery</p>
